@@ -1,0 +1,17 @@
+provider: onchainagentintel-io
+apis_io: https://apis.io/providers/onchainagentintel-io/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agent
+    - agents
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/onchainagentintel-io-openapi.json#GET /.well-known/agents.json
+    - openapi/_original/onchainagentintel-io-openapi.json#GET /agent.json
+    - openapi/_original/onchainagentintel-io-openapi.json#GET /v1/intel/agent/{agent_id}
+    - openapi/_original/onchainagentintel-io-openapi.yml#GET /.well-known/agents.json
+    - openapi/_original/onchainagentintel-io-openapi.yml#GET /agent.json

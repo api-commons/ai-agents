@@ -1,0 +1,27 @@
+provider: zoominfo
+apis_io: https://apis.io/providers/zoominfo/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agents
+    properties:
+      id: id
+      metadata: attributes
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/zoominfo-gtm-agent-v1-openapi.json#GET /agent/v1/agents
+  agent_run:
+    path_segment:
+    - runs
+    - executions
+    properties:
+      id: id
+      metadata: attributes
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/zoominfo-gtm-agent-v1-openapi.json#GET /agent/v1/agent-teams/{agentTeamId}/runs
+    - openapi/_original/zoominfo-gtm-agent-v1-openapi.json#GET /agent/v1/agent-teams/{agentTeamId}/runs/{runId}
+    - openapi/_original/zoominfo-gtm-agent-v1-openapi.json#POST /agent/v1/agent-teams/{agentTeamId}/runs
+    - openapi/_original/zoominfo-gtm-platform-v1-openapi.json#GET /platform/v1/workflows/executions/{id}

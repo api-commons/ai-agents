@@ -1,0 +1,763 @@
+context: ai-agents
+name: AI Agents
+generated: '2026-11-11'
+version: 0.1.0-draft.20261111
+status: draft
+cohort:
+  tags:
+  - AI Agents
+  - Agents
+  - Agentic AI
+  - Agent Platform
+  - Autonomous Agents
+  - Agentic
+  - Conversational AI
+  providers_with_harvested_openapi: 680
+thresholds:
+  core: 0.5
+  extended: 0.2
+  min_providers: 3
+excluded: {}
+duplicates:
+  duvo-ai:
+  - duvoai
+  parallel-ai:
+  - parallel
+  - parallel-web-systems
+  sail:
+  - sail-research
+  eventwren:
+  - hagglebee
+  - yarnhen
+  - yawplet
+  rime-ai:
+  - ottic
+shared_specs: {}
+concepts:
+  ai_agent:
+    segments_seen:
+      agents: 119
+      agent: 40
+      bots: 8
+      assistants: 7
+      assistant: 5
+      bot: 1
+    providers_exposing: 156
+    providers_with_readable_schema: 121
+    operations:
+    - operation: GET collection
+      providers: 138
+      share: 0.885
+      tier: core
+    - operation: GET item
+      providers: 97
+      share: 0.622
+      tier: core
+    - operation: POST collection
+      providers: 89
+      share: 0.571
+      tier: core
+    - operation: DELETE item
+      providers: 66
+      share: 0.423
+      tier: extended
+    - operation: UPDATE item
+      providers: 65
+      share: 0.417
+      tier: extended
+    - operation: POST item
+      providers: 9
+      share: 0.058
+      tier: long-tail
+    - operation: UPDATE collection
+      providers: 8
+      share: 0.051
+      tier: long-tail
+    - operation: DELETE collection
+      providers: 6
+      share: 0.038
+      tier: long-tail
+    properties:
+    - name: name
+      tier: core
+      providers: 97
+      share: 0.802
+      type: string
+      spellings:
+      - name
+      - display_name
+      - displayName
+      - label
+      - title
+    - name: id
+      tier: core
+      providers: 96
+      share: 0.793
+      type: string
+      spellings:
+      - id
+      - agent_id
+      - agentId
+      - _id
+    - name: created_at
+      tier: core
+      providers: 62
+      share: 0.512
+      type: string
+      spellings:
+      - created_at
+      - createdAt
+      - create_time
+      - created
+      - createdDate
+      - dateCreated
+    - name: description
+      tier: extended
+      providers: 54
+      share: 0.446
+      type: string
+      spellings:
+      - description
+      - details
+    - name: updated_at
+      tier: extended
+      providers: 45
+      share: 0.372
+      type: string
+      spellings:
+      - updated_at
+      - updatedAt
+      - update_time
+      - updatedDate
+      - dateModified
+      - modified_at
+      - updated
+    - name: instructions
+      tier: extended
+      providers: 35
+      share: 0.289
+      type: string
+      spellings:
+      - instructions
+      - prompt
+      - system_prompt
+      - systemPrompt
+      - role
+      - system_message
+      - systemMessage
+    - name: metadata
+      tier: extended
+      providers: 34
+      share: 0.281
+      type: object
+      spellings:
+      - metadata
+      - tags
+      - attributes
+      - labels
+      - meta_data
+    - name: tools
+      tier: extended
+      providers: 29
+      share: 0.24
+      type: array
+      spellings:
+      - tools
+      - skills
+      - capabilities
+      - tool_ids
+      - actions
+      - integrations
+    - name: model
+      tier: extended
+      providers: 25
+      share: 0.207
+      type: string
+      spellings:
+      - model
+      - model_id
+      - model_name
+      - engine
+      - llmModel
+      - llm
+    - name: status
+      tier: extended
+      providers: 25
+      share: 0.207
+      type: string
+      spellings:
+      - status
+      - state
+    long_tail_count: 1487
+    long_tail_sample:
+    - type
+    - version
+    - created_by
+    - knowledge_base_ids
+    - organization_id
+    - phone_number
+    - agent_name
+    - enabled
+    - user_id
+    - email
+    - folder_id
+    - is_active
+    - mcp_servers
+    - slug
+    - voice
+    - active
+    - agent_type
+    - config
+    - deleted
+    - error
+    - language
+    - owner
+    - owner_id
+    - project
+    - project_id
+    - provider
+    - source
+    - temperature
+    - timezone
+    - voicemail_message
+    - api_key
+    - avatar_url
+    - handle
+    - output_schema
+    - template
+    - updated_by
+    - user
+    - variables
+    - wallet_address
+    - workspace_id
+  agent_thread:
+    segments_seen:
+      conversations: 34
+      threads: 12
+      chats: 7
+      conversation: 4
+      sessions: 4
+      thread: 1
+    providers_exposing: 52
+    providers_with_readable_schema: 43
+    operations:
+    - operation: GET collection
+      providers: 47
+      share: 0.904
+      tier: core
+    - operation: GET item
+      providers: 41
+      share: 0.788
+      tier: core
+    - operation: POST collection
+      providers: 31
+      share: 0.596
+      tier: core
+    - operation: DELETE item
+      providers: 26
+      share: 0.5
+      tier: core
+    - operation: UPDATE item
+      providers: 19
+      share: 0.365
+      tier: extended
+    - operation: DELETE collection
+      providers: 3
+      share: 0.058
+      tier: long-tail
+    - operation: UPDATE collection
+      providers: 1
+      share: 0.019
+      tier: long-tail
+    properties:
+    - name: id
+      tier: core
+      providers: 31
+      share: 0.721
+      type: string
+      spellings:
+      - id
+      - uuid
+      - ID
+      - _id
+      - recordId
+    - name: created_at
+      tier: core
+      providers: 25
+      share: 0.581
+      type: string
+      spellings:
+      - created_at
+      - createdAt
+      - created
+      - create_time
+    - name: name
+      tier: extended
+      providers: 19
+      share: 0.442
+      type: string
+      spellings:
+      - name
+      - title
+      - label
+    - name: metadata
+      tier: extended
+      providers: 18
+      share: 0.419
+      type: object
+      spellings:
+      - metadata
+      - tags
+      - labels
+      - Tags
+      - attributes
+      - meta_data
+    - name: status
+      tier: extended
+      providers: 18
+      share: 0.419
+      type: string
+      spellings:
+      - status
+      - state
+    - name: updated_at
+      tier: extended
+      providers: 17
+      share: 0.395
+      type: string
+      spellings:
+      - updated_at
+      - updatedAt
+      - updated
+    - name: messages
+      tier: extended
+      providers: 12
+      share: 0.279
+      type: array
+      spellings:
+      - messages
+      - messageCount
+      - turns
+      - message_count
+      - history
+    - name: conversation_id
+      tier: extended
+      providers: 11
+      share: 0.256
+      type: string
+      spellings:
+      - conversation_id
+      - conversationId
+    - name: user_id
+      tier: extended
+      providers: 11
+      share: 0.256
+      type: string
+      spellings:
+      - user_id
+      - userId
+    - name: agent_id
+      tier: extended
+      providers: 10
+      share: 0.233
+      type: string
+      spellings:
+      - agent_id
+      - agentId
+      - assistantId
+      - BotID
+      - AgentId
+      - agent
+    long_tail_count: 599
+    long_tail_sample:
+    - description
+    - agent_name
+    - type
+    - channel
+    - contact_id
+    - direction
+    - participants
+    - role
+    - started_at
+    - timestamp
+    - audio_url
+    - deleted_at
+    - end_time
+    - filters
+    - last_message
+    - last_message_at
+    - model
+    - phone_number
+    - project_id
+    - start_time
+    - unread_count
+    - analysis
+    - chat_mode
+    - contact
+    - content
+    - conversation_ids
+    - creator
+    - custom_attributes
+    - customer_name
+    - deployment_id
+    - duration
+    - duration_seconds
+    - ended_at
+    - entity_id
+    - environment
+    - external_contact_id
+    - external_id
+    - group_name
+    - has_audio
+    - input
+  agent_run:
+    segments_seen:
+      runs: 34
+      tasks: 6
+      executions: 5
+      run: 2
+      jobs: 1
+    providers_exposing: 41
+    providers_with_readable_schema: 39
+    operations:
+    - operation: GET collection
+      providers: 36
+      share: 0.878
+      tier: core
+    - operation: GET item
+      providers: 30
+      share: 0.732
+      tier: core
+    - operation: POST collection
+      providers: 27
+      share: 0.659
+      tier: core
+    - operation: DELETE item
+      providers: 11
+      share: 0.268
+      tier: extended
+    - operation: UPDATE item
+      providers: 5
+      share: 0.122
+      tier: long-tail
+    - operation: POST item
+      providers: 3
+      share: 0.073
+      tier: long-tail
+    properties:
+    - name: status
+      tier: core
+      providers: 31
+      share: 0.795
+      type: string
+      spellings:
+      - status
+      - state
+      - run_status
+    - name: id
+      tier: core
+      providers: 27
+      share: 0.692
+      type: string
+      spellings:
+      - id
+      - uuid
+    - name: created_at
+      tier: core
+      providers: 22
+      share: 0.564
+      type: string
+      spellings:
+      - created_at
+      - createdAt
+      - create_time
+    - name: completed_at
+      tier: extended
+      providers: 17
+      share: 0.436
+      type: string
+      spellings:
+      - completed_at
+      - end_time
+      - ended_at
+      - finished_at
+      - endedAt
+      - finishedAt
+    - name: started_at
+      tier: extended
+      providers: 17
+      share: 0.436
+      type: string
+      spellings:
+      - started_at
+      - start_time
+      - startedAt
+      - startTime
+    - name: agent_id
+      tier: extended
+      providers: 14
+      share: 0.359
+      type: string
+      spellings:
+      - agent_id
+      - agentId
+      - agent
+    - name: metadata
+      tier: extended
+      providers: 13
+      share: 0.333
+      type: object
+      spellings:
+      - metadata
+      - tags
+      - meta_data
+      - attributes
+    - name: run_id
+      tier: extended
+      providers: 13
+      share: 0.333
+      type: string
+      spellings:
+      - run_id
+      - runId
+    - name: name
+      tier: extended
+      providers: 11
+      share: 0.282
+      type: string
+      spellings:
+      - name
+      - title
+      - display_name
+    - name: error
+      tier: extended
+      providers: 10
+      share: 0.256
+      type: string
+      spellings:
+      - error
+    - name: input
+      tier: extended
+      providers: 10
+      share: 0.256
+      type: string
+      spellings:
+      - input
+      - messages
+      - task
+      - instructions
+      - prompt
+    - name: updated_at
+      tier: extended
+      providers: 10
+      share: 0.256
+      type: string
+      spellings:
+      - updated_at
+      - updatedAt
+      - update_time
+      - modified_at
+    - name: thread_id
+      tier: extended
+      providers: 9
+      share: 0.231
+      type: string
+      spellings:
+      - session_id
+      - thread_id
+      - sessionId
+      - conversation_id
+    long_tail_count: 571
+    long_tail_sample:
+    - output
+    - error_message
+    - agent_name
+    - schedule_id
+    - config
+    - description
+    - detail
+    - parent_run_id
+    - schedule
+    - source
+    - tools
+    - user_id
+    - attachments
+    - claimed_at
+    - context
+    - duration_ms
+    - events
+    - execution_time_ms
+    - failure_code
+    - filters
+    - is_public
+    - metric_ids
+    - metrics
+    - mode
+    - mutation_id
+    - mutation_ids
+    - options
+    - organization_id
+    - owner_id
+    - params
+    - persona_id
+    - persona_metrics
+    - project_id
+    - response_text
+    - run
+    - run_number
+    - run_type
+    - sandbox_id
+    - skill
+    - steps
+  agent_tool:
+    segments_seen:
+      tools: 30
+      tool: 9
+      integrations: 1
+      skills: 1
+      functions: 1
+    providers_exposing: 37
+    providers_with_readable_schema: 27
+    operations:
+    - operation: GET collection
+      providers: 35
+      share: 0.946
+      tier: core
+    - operation: POST collection
+      providers: 22
+      share: 0.595
+      tier: core
+    - operation: DELETE item
+      providers: 18
+      share: 0.486
+      tier: extended
+    - operation: GET item
+      providers: 18
+      share: 0.486
+      tier: extended
+    - operation: UPDATE item
+      providers: 15
+      share: 0.405
+      tier: extended
+    - operation: UPDATE collection
+      providers: 6
+      share: 0.162
+      tier: long-tail
+    - operation: DELETE collection
+      providers: 2
+      share: 0.054
+      tier: long-tail
+    - operation: POST item
+      providers: 1
+      share: 0.027
+      tier: long-tail
+    properties:
+    - name: name
+      tier: core
+      providers: 22
+      share: 0.815
+      type: string
+      spellings:
+      - name
+      - displayName
+      - title
+    - name: id
+      tier: core
+      providers: 20
+      share: 0.741
+      type: string
+      spellings:
+      - id
+      - agent_id
+      - agentId
+    - name: description
+      tier: core
+      providers: 18
+      share: 0.667
+      type: string
+      spellings:
+      - description
+    - name: created_at
+      tier: core
+      providers: 17
+      share: 0.63
+      type: string
+      spellings:
+      - created_at
+      - createdAt
+      - created
+      - createdDate
+      - createTime
+    - name: parameters
+      tier: core
+      providers: 15
+      share: 0.556
+      type: object
+      spellings:
+      - parameters
+      - inputSchema
+      - arguments
+      - input_schema
+      - schema
+      - json_schema
+    - name: updated_at
+      tier: extended
+      providers: 12
+      share: 0.444
+      type: string
+      spellings:
+      - updatedAt
+      - updated_at
+      - updatedDate
+      - updateTime
+    - name: type
+      tier: extended
+      providers: 10
+      share: 0.37
+      type: string
+      spellings:
+      - type
+      - toolType
+      - tool_type
+    long_tail_count: 221
+    long_tail_sample:
+    - headers
+    - metadata
+    - annotations
+    - body
+    - enabled
+    - tool_name
+    - method
+    - org_id
+    - output_schema
+    - status
+    - tool_id
+    - webhook_url
+    - backoff_plan
+    - credential_id
+    - definition
+    - deleted
+    - encrypted_paths
+    - endpoint_url
+    - messages
+    - model
+    - project
+    - project_id
+    - rejection_plan
+    - tenant_id
+    - timeout_seconds
+    - user_id
+    - variable_extraction_plan
+    - a2a_listed
+    - a2a_peers
+    - a2a_slug
+    - a2a_token
+    - a2a_url
+    - a_cc_group
+    - about
+    - access_info
+    - action_confirmation_requirement
+    - agent_count
+    - agents_info
+    - agents_to_transfer_to
+    - allow_tool_chaining

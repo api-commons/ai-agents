@@ -1,0 +1,13 @@
+provider: llama-box
+apis_io: https://apis.io/providers/llama-box/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agent
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/llama-box-crvusd-yield-optimizer-openapi-original.json#GET /.well-known/agent.json
+    - openapi/_original/llama-box-crvusd-yield-optimizer-openapi.yml#GET /.well-known/agent.json

@@ -1,0 +1,13 @@
+provider: restack
+apis_io: https://apis.io/providers/restack/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agents
+    properties:
+      status: status
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/restack-openapi.yml#POST /api/agents/{agentName}

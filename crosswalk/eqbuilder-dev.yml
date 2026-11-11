@@ -1,0 +1,17 @@
+provider: eqbuilder-dev
+apis_io: https://apis.io/providers/eqbuilder-dev/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - bots
+    - agents
+    - agent
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/eqbuilder-dev-openapi.json#DELETE /api/admin/bots/{bot_id}
+    - openapi/_original/eqbuilder-dev-openapi.json#GET /.well-known/agent.json
+    - openapi/_original/eqbuilder-dev-openapi.json#GET /.well-known/agents.json
+    - openapi/_original/eqbuilder-dev-openapi.json#GET /api/bots

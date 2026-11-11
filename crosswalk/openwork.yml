@@ -1,0 +1,24 @@
+provider: openwork
+apis_io: https://apis.io/providers/openwork/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agent
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/openwork-den-openapi.json#GET /.well-known/oauth-protected-resource/mcp/agent
+  agent_tool:
+    path_segment:
+    - tools
+    properties:
+      name:
+      - name
+      - title
+      description: description
+      parameters: inputSchema
+    core_coverage: 0.6
+    evidence:
+    - openapi/_original/openwork-den-openapi.json#GET /v1/mcp-connections/{connectionId}/tools

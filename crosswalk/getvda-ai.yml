@@ -1,0 +1,22 @@
+provider: getvda-ai
+apis_io: https://apis.io/providers/getvda-ai/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agents
+    - agent
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/getvda-ai-gosce-portfolio-openapi.json#GET /agents
+    - openapi/_original/getvda-ai-gosce-portfolio-openapi.json#GET /agents/
+    - openapi/_original/getvda-ai-gosce-router-openapi.json#GET /.well-known/agent.json
+  agent_tool:
+    path_segment:
+    - tools
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/getvda-ai-hitl-openapi.json#GET /v1/tools

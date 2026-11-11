@@ -1,0 +1,29 @@
+provider: canfly-ai
+apis_io: https://apis.io/providers/canfly-ai/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agents
+    properties:
+      name:
+      - name
+      - display_name
+      - displayName
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/canfly-ai-openapi.json#GET /api/community/agents
+    - openapi/_original/canfly-ai-openapi.json#GET /api/community/agents/{name}
+    - openapi/_original/canfly-ai-openapi.json#PUT /api/agents/{name}
+  agent_run:
+    path_segment:
+    - tasks
+    properties:
+      status: status
+      id: id
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/canfly-ai-openapi.json#GET /api/agents/{name}/tasks
+    - openapi/_original/canfly-ai-openapi.json#GET /api/agents/{name}/tasks/{id}
+    - openapi/_original/canfly-ai-openapi.json#POST /api/agents/{name}/tasks

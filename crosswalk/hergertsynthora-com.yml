@@ -1,0 +1,13 @@
+provider: hergertsynthora-com
+apis_io: https://apis.io/providers/hergertsynthora-com/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agent
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/hergertsynthora-com-mesh-aggregate-openapi.json#GET /.well-known/agent.json
+    - openapi/_original/hergertsynthora-com-mesh-aggregate-openapi.yml#GET /.well-known/agent.json

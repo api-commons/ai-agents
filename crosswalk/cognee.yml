@@ -1,0 +1,15 @@
+provider: cognee
+apis_io: https://apis.io/providers/cognee/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agents
+    properties:
+      id: agentId
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/cognee-openapi.json#DELETE /api/v1/agents/{agent_id}
+    - openapi/_original/cognee-openapi.json#GET /api/v1/activity/agents
+    - openapi/_original/cognee-openapi.json#GET /api/v1/agents/{agent_id}

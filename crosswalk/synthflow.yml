@@ -1,0 +1,21 @@
+provider: synthflow
+apis_io: https://apis.io/providers/synthflow/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - assistants
+    properties:
+      name: name
+      description:
+      - details
+      - description
+      status: status
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/synthflow-openapi.json#DELETE /assistants/{model_id}
+    - openapi/_original/synthflow-openapi.json#GET /assistants/
+    - openapi/_original/synthflow-openapi.json#GET /assistants/{model_id}
+    - openapi/_original/synthflow-openapi.json#POST /assistants
+    - openapi/_original/synthflow-openapi.json#PUT /assistants/{model_id}

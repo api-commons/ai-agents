@@ -1,0 +1,18 @@
+provider: execution-market
+apis_io: https://apis.io/providers/execution-market/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agents
+    - agent
+    properties:
+      id: agent_id
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/execution-market-openapi.json#GET /.well-known/agent.json
+    - openapi/_original/execution-market-openapi.json#GET /api/v1/reputation/agents/{agent_id}
+    - openapi/_original/execution-market-openapi.json#GET /discovery/agents
+    - openapi/_original/execution-market-openapi.yml#GET /.well-known/agent.json
+    - openapi/_original/execution-market-openapi.yml#GET /api/v1/reputation/agents/{agent_id}

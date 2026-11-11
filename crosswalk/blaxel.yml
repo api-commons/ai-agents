@@ -1,0 +1,17 @@
+provider: blaxel
+apis_io: https://apis.io/providers/blaxel/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agents
+    properties:
+      status: status
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/blaxel-openapi.yml#DELETE /agents/{agentName}
+    - openapi/_original/blaxel-openapi.yml#GET /agents
+    - openapi/_original/blaxel-openapi.yml#GET /agents/{agentName}
+    - openapi/_original/blaxel-openapi.yml#POST /agents
+    - openapi/_original/blaxel-openapi.yml#PUT /agents/{agentName}

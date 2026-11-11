@@ -1,0 +1,24 @@
+provider: beat-side-de
+apis_io: https://apis.io/providers/beat-side-de/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agents
+    properties:
+      name: name
+      id: id
+      description: description
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/beat-side-de-openapi.json#GET /api/v1/agents
+  agent_thread:
+    path_segment:
+    - threads
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/beat-side-de-openapi.json#GET /api/v1/forum/threads
+    - openapi/_original/beat-side-de-openapi.json#GET /api/v1/forum/threads/{id}
+    - openapi/_original/beat-side-de-openapi.json#POST /api/v1/forum/threads

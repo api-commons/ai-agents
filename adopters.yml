@@ -1,0 +1,913 @@
+context: ai-agents
+generated: '2026-11-11'
+adopters:
+- provider: 1fort
+  apis_io: https://apis.io/providers/1fort/
+  crosswalk: crosswalk/1fort.yml
+  concepts:
+  - ai_agent
+- provider: a2a402-market
+  apis_io: https://apis.io/providers/a2a402-market/
+  crosswalk: crosswalk/a2a402-market.yml
+  concepts:
+  - ai_agent
+- provider: accept
+  apis_io: https://apis.io/providers/accept/
+  crosswalk: crosswalk/accept.yml
+  concepts:
+  - ai_agent
+- provider: afmr-ai
+  apis_io: https://apis.io/providers/afmr-ai/
+  crosswalk: crosswalk/afmr-ai.yml
+  concepts:
+  - ai_agent
+- provider: agentdisco-io
+  apis_io: https://apis.io/providers/agentdisco-io/
+  crosswalk: crosswalk/agentdisco-io.yml
+  concepts:
+  - ai_agent
+- provider: agenthealthmonitor-xyz
+  apis_io: https://apis.io/providers/agenthealthmonitor-xyz/
+  crosswalk: crosswalk/agenthealthmonitor-xyz.yml
+  concepts:
+  - ai_agent
+- provider: agentmesh-link
+  apis_io: https://apis.io/providers/agentmesh-link/
+  crosswalk: crosswalk/agentmesh-link.yml
+  concepts:
+  - ai_agent
+- provider: agentphone
+  apis_io: https://apis.io/providers/agentphone/
+  crosswalk: crosswalk/agentphone.yml
+  concepts:
+  - agent_thread
+  - ai_agent
+- provider: agentspodium-com
+  apis_io: https://apis.io/providers/agentspodium-com/
+  crosswalk: crosswalk/agentspodium-com.yml
+  concepts:
+  - agent_tool
+  - ai_agent
+- provider: agmsg-world
+  apis_io: https://apis.io/providers/agmsg-world/
+  crosswalk: crosswalk/agmsg-world.yml
+  concepts:
+  - ai_agent
+- provider: agno
+  apis_io: https://apis.io/providers/agno/
+  crosswalk: crosswalk/agno.yml
+  concepts:
+  - agent_run
+  - ai_agent
+- provider: agntcy
+  apis_io: https://apis.io/providers/agntcy/
+  crosswalk: crosswalk/agntcy.yml
+  concepts:
+  - agent_run
+  - agent_thread
+  - ai_agent
+- provider: agoragentic-com
+  apis_io: https://apis.io/providers/agoragentic-com/
+  crosswalk: crosswalk/agoragentic-com.yml
+  concepts:
+  - agent_run
+  - agent_thread
+  - ai_agent
+- provider: ainglish-org
+  apis_io: https://apis.io/providers/ainglish-org/
+  crosswalk: crosswalk/ainglish-org.yml
+  concepts:
+  - ai_agent
+- provider: airia
+  apis_io: https://apis.io/providers/airia/
+  crosswalk: crosswalk/airia.yml
+  concepts:
+  - agent_run
+  - agent_thread
+  - agent_tool
+  - ai_agent
+- provider: airtop
+  apis_io: https://apis.io/providers/airtop/
+  crosswalk: crosswalk/airtop.yml
+  concepts:
+  - agent_tool
+  - ai_agent
+- provider: altimate-ai
+  apis_io: https://apis.io/providers/altimate-ai/
+  crosswalk: crosswalk/altimate-ai.yml
+  concepts:
+  - agent_run
+  - agent_thread
+  - ai_agent
+- provider: amazon-lex
+  apis_io: https://apis.io/providers/amazon-lex/
+  crosswalk: crosswalk/amazon-lex.yml
+  concepts:
+  - ai_agent
+- provider: amigo
+  apis_io: https://apis.io/providers/amigo/
+  crosswalk: crosswalk/amigo.yml
+  concepts:
+  - agent_run
+  - agent_thread
+  - agent_tool
+  - ai_agent
+- provider: ando
+  apis_io: https://apis.io/providers/ando/
+  crosswalk: crosswalk/ando.yml
+  concepts:
+  - agent_thread
+  - ai_agent
+- provider: anp2-com
+  apis_io: https://apis.io/providers/anp2-com/
+  crosswalk: crosswalk/anp2-com.yml
+  concepts:
+  - ai_agent
+- provider: anthropic
+  apis_io: https://apis.io/providers/anthropic/
+  crosswalk: crosswalk/anthropic.yml
+  concepts:
+  - ai_agent
+- provider: appwrite
+  apis_io: https://apis.io/providers/appwrite/
+  crosswalk: crosswalk/appwrite.yml
+  concepts:
+  - ai_agent
+- provider: archastro
+  apis_io: https://apis.io/providers/archastro/
+  crosswalk: crosswalk/archastro.yml
+  concepts:
+  - agent_thread
+  - ai_agent
+- provider: arthur-ai
+  apis_io: https://apis.io/providers/arthur-ai/
+  crosswalk: crosswalk/arthur-ai.yml
+  concepts:
+  - agent_tool
+  - ai_agent
+- provider: askui
+  apis_io: https://apis.io/providers/askui/
+  crosswalk: crosswalk/askui.yml
+  concepts:
+  - agent_run
+  - ai_agent
+- provider: atomadic-tech
+  apis_io: https://apis.io/providers/atomadic-tech/
+  crosswalk: crosswalk/atomadic-tech.yml
+  concepts:
+  - ai_agent
+- provider: autogpt
+  apis_io: https://apis.io/providers/autogpt/
+  crosswalk: crosswalk/autogpt.yml
+  concepts:
+  - agent_run
+  - agent_thread
+  - ai_agent
+- provider: axonflow
+  apis_io: https://apis.io/providers/axonflow/
+  crosswalk: crosswalk/axonflow.yml
+  concepts:
+  - agent_run
+  - ai_agent
+- provider: band-ai
+  apis_io: https://apis.io/providers/band-ai/
+  crosswalk: crosswalk/band-ai.yml
+  concepts:
+  - agent_run
+  - agent_thread
+  - ai_agent
+- provider: barndoor
+  apis_io: https://apis.io/providers/barndoor/
+  crosswalk: crosswalk/barndoor.yml
+  concepts:
+  - ai_agent
+- provider: beat-side-de
+  apis_io: https://apis.io/providers/beat-side-de/
+  crosswalk: crosswalk/beat-side-de.yml
+  concepts:
+  - agent_thread
+  - ai_agent
+- provider: beyond-presence
+  apis_io: https://apis.io/providers/beyond-presence/
+  crosswalk: crosswalk/beyond-presence.yml
+  concepts:
+  - agent_thread
+  - ai_agent
+- provider: blaxel
+  apis_io: https://apis.io/providers/blaxel/
+  crosswalk: crosswalk/blaxel.yml
+  concepts:
+  - ai_agent
+- provider: bluejay
+  apis_io: https://apis.io/providers/bluejay/
+  crosswalk: crosswalk/bluejay.yml
+  concepts:
+  - agent_run
+  - agent_thread
+  - agent_tool
+  - ai_agent
+- provider: botpress
+  apis_io: https://apis.io/providers/botpress/
+  crosswalk: crosswalk/botpress.yml
+  concepts:
+  - agent_thread
+  - ai_agent
+- provider: brick-blue
+  apis_io: https://apis.io/providers/brick-blue/
+  crosswalk: crosswalk/brick-blue.yml
+  concepts:
+  - ai_agent
+- provider: browserbase
+  apis_io: https://apis.io/providers/browserbase/
+  crosswalk: crosswalk/browserbase.yml
+  concepts:
+  - agent_run
+  - ai_agent
+- provider: browserless
+  apis_io: https://apis.io/providers/browserless/
+  crosswalk: crosswalk/browserless.yml
+  concepts:
+  - ai_agent
+- provider: buildkite
+  apis_io: https://apis.io/providers/buildkite/
+  crosswalk: crosswalk/buildkite.yml
+  concepts:
+  - ai_agent
+- provider: buildkite-com
+  apis_io: https://apis.io/providers/buildkite-com/
+  crosswalk: crosswalk/buildkite-com.yml
+  concepts:
+  - ai_agent
+- provider: canfly-ai
+  apis_io: https://apis.io/providers/canfly-ai/
+  crosswalk: crosswalk/canfly-ai.yml
+  concepts:
+  - agent_run
+  - ai_agent
+- provider: chatwoot
+  apis_io: https://apis.io/providers/chatwoot/
+  crosswalk: crosswalk/chatwoot.yml
+  concepts:
+  - agent_thread
+  - ai_agent
+- provider: clawdchat-ai
+  apis_io: https://apis.io/providers/clawdchat-ai/
+  crosswalk: crosswalk/clawdchat-ai.yml
+  concepts:
+  - agent_thread
+  - ai_agent
+- provider: cognee
+  apis_io: https://apis.io/providers/cognee/
+  crosswalk: crosswalk/cognee.yml
+  concepts:
+  - ai_agent
+- provider: comet
+  apis_io: https://apis.io/providers/comet/
+  crosswalk: crosswalk/comet.yml
+  concepts:
+  - agent_thread
+  - ai_agent
+- provider: coval
+  apis_io: https://apis.io/providers/coval/
+  crosswalk: crosswalk/coval.yml
+  concepts:
+  - agent_run
+  - agent_thread
+  - ai_agent
+- provider: coval-ai
+  apis_io: https://apis.io/providers/coval-ai/
+  crosswalk: crosswalk/coval-ai.yml
+  concepts:
+  - agent_run
+  - agent_thread
+  - ai_agent
+- provider: crescendo
+  apis_io: https://apis.io/providers/crescendo/
+  crosswalk: crosswalk/crescendo.yml
+  concepts:
+  - agent_thread
+  - ai_agent
+- provider: decision-anchor-com
+  apis_io: https://apis.io/providers/decision-anchor-com/
+  crosswalk: crosswalk/decision-anchor-com.yml
+  concepts:
+  - agent_tool
+  - ai_agent
+- provider: dialnexa
+  apis_io: https://apis.io/providers/dialnexa/
+  crosswalk: crosswalk/dialnexa.yml
+  concepts:
+  - ai_agent
+- provider: directhireagents-com
+  apis_io: https://apis.io/providers/directhireagents-com/
+  crosswalk: crosswalk/directhireagents-com.yml
+  concepts:
+  - agent_thread
+  - ai_agent
+- provider: dixa
+  apis_io: https://apis.io/providers/dixa/
+  crosswalk: crosswalk/dixa.yml
+  concepts:
+  - agent_thread
+  - ai_agent
+- provider: duvo-ai
+  apis_io: https://apis.io/providers/duvo-ai/
+  crosswalk: crosswalk/duvo-ai.yml
+  concepts:
+  - agent_run
+  - agent_thread
+  - agent_tool
+  - ai_agent
+- provider: dyno
+  apis_io: https://apis.io/providers/dyno/
+  crosswalk: crosswalk/dyno.yml
+  concepts:
+  - agent_run
+  - agent_tool
+  - ai_agent
+- provider: easyfence-cn
+  apis_io: https://apis.io/providers/easyfence-cn/
+  crosswalk: crosswalk/easyfence-cn.yml
+  concepts:
+  - ai_agent
+- provider: elementum
+  apis_io: https://apis.io/providers/elementum/
+  crosswalk: crosswalk/elementum.yml
+  concepts:
+  - ai_agent
+- provider: elevenlabs
+  apis_io: https://apis.io/providers/elevenlabs/
+  crosswalk: crosswalk/elevenlabs.yml
+  concepts:
+  - agent_thread
+  - agent_tool
+  - ai_agent
+- provider: elonsusk-com
+  apis_io: https://apis.io/providers/elonsusk-com/
+  crosswalk: crosswalk/elonsusk-com.yml
+  concepts:
+  - ai_agent
+- provider: emem-dev
+  apis_io: https://apis.io/providers/emem-dev/
+  crosswalk: crosswalk/emem-dev.yml
+  concepts:
+  - agent_tool
+  - ai_agent
+- provider: eqbuilder-dev
+  apis_io: https://apis.io/providers/eqbuilder-dev/
+  crosswalk: crosswalk/eqbuilder-dev.yml
+  concepts:
+  - ai_agent
+- provider: evebrief-org
+  apis_io: https://apis.io/providers/evebrief-org/
+  crosswalk: crosswalk/evebrief-org.yml
+  concepts:
+  - ai_agent
+- provider: execution-market
+  apis_io: https://apis.io/providers/execution-market/
+  crosswalk: crosswalk/execution-market.yml
+  concepts:
+  - ai_agent
+- provider: finn-tannlege-com
+  apis_io: https://apis.io/providers/finn-tannlege-com/
+  crosswalk: crosswalk/finn-tannlege-com.yml
+  concepts:
+  - ai_agent
+- provider: fixie
+  apis_io: https://apis.io/providers/fixie/
+  crosswalk: crosswalk/fixie.yml
+  concepts:
+  - agent_tool
+  - ai_agent
+- provider: flowhomes-eu
+  apis_io: https://apis.io/providers/flowhomes-eu/
+  crosswalk: crosswalk/flowhomes-eu.yml
+  concepts:
+  - ai_agent
+- provider: flowise
+  apis_io: https://apis.io/providers/flowise/
+  crosswalk: crosswalk/flowise.yml
+  concepts:
+  - agent_tool
+  - ai_agent
+- provider: frontline
+  apis_io: https://apis.io/providers/frontline/
+  crosswalk: crosswalk/frontline.yml
+  concepts:
+  - agent_thread
+  - agent_tool
+  - ai_agent
+- provider: fullcast
+  apis_io: https://apis.io/providers/fullcast/
+  crosswalk: crosswalk/fullcast.yml
+  concepts:
+  - ai_agent
+- provider: genesys
+  apis_io: https://apis.io/providers/genesys/
+  crosswalk: crosswalk/genesys.yml
+  concepts:
+  - agent_run
+  - agent_thread
+  - ai_agent
+- provider: getvda-ai
+  apis_io: https://apis.io/providers/getvda-ai/
+  crosswalk: crosswalk/getvda-ai.yml
+  concepts:
+  - agent_tool
+  - ai_agent
+- provider: gitdealflow-com
+  apis_io: https://apis.io/providers/gitdealflow-com/
+  crosswalk: crosswalk/gitdealflow-com.yml
+  concepts:
+  - agent_tool
+  - ai_agent
+- provider: gojiberry-ai
+  apis_io: https://apis.io/providers/gojiberry-ai/
+  crosswalk: crosswalk/gojiberry-ai.yml
+  concepts:
+  - agent_thread
+  - ai_agent
+- provider: google-cloud-dialogflow-cx
+  apis_io: https://apis.io/providers/google-cloud-dialogflow-cx/
+  crosswalk: crosswalk/google-cloud-dialogflow-cx.yml
+  concepts:
+  - ai_agent
+- provider: google-dialogflow
+  apis_io: https://apis.io/providers/google-dialogflow/
+  crosswalk: crosswalk/google-dialogflow.yml
+  concepts:
+  - agent_thread
+  - agent_tool
+  - ai_agent
+- provider: greenhelix-net
+  apis_io: https://apis.io/providers/greenhelix-net/
+  crosswalk: crosswalk/greenhelix-net.yml
+  concepts:
+  - ai_agent
+- provider: gumloop
+  apis_io: https://apis.io/providers/gumloop/
+  crosswalk: crosswalk/gumloop.yml
+  concepts:
+  - agent_thread
+  - agent_tool
+  - ai_agent
+- provider: h-company
+  apis_io: https://apis.io/providers/h-company/
+  crosswalk: crosswalk/h-company.yml
+  concepts:
+  - agent_run
+  - ai_agent
+- provider: h2o-ai
+  apis_io: https://apis.io/providers/h2o-ai/
+  crosswalk: crosswalk/h2o-ai.yml
+  concepts:
+  - agent_thread
+  - agent_tool
+  - ai_agent
+- provider: hergertsynthora-com
+  apis_io: https://apis.io/providers/hergertsynthora-com/
+  crosswalk: crosswalk/hergertsynthora-com.yml
+  concepts:
+  - ai_agent
+- provider: heymilo
+  apis_io: https://apis.io/providers/heymilo/
+  crosswalk: crosswalk/heymilo.yml
+  concepts:
+  - ai_agent
+- provider: icallagent-public-api
+  apis_io: https://apis.io/providers/icallagent-public-api/
+  crosswalk: crosswalk/icallagent-public-api.yml
+  concepts:
+  - ai_agent
+- provider: iwant-fyi
+  apis_io: https://apis.io/providers/iwant-fyi/
+  crosswalk: crosswalk/iwant-fyi.yml
+  concepts:
+  - ai_agent
+- provider: julep
+  apis_io: https://apis.io/providers/julep/
+  crosswalk: crosswalk/julep.yml
+  concepts:
+  - agent_run
+  - agent_tool
+  - ai_agent
+- provider: kgninja-dev
+  apis_io: https://apis.io/providers/kgninja-dev/
+  crosswalk: crosswalk/kgninja-dev.yml
+  concepts:
+  - ai_agent
+- provider: kimetsu-dev
+  apis_io: https://apis.io/providers/kimetsu-dev/
+  crosswalk: crosswalk/kimetsu-dev.yml
+  concepts:
+  - ai_agent
+- provider: knoxcall
+  apis_io: https://apis.io/providers/knoxcall/
+  crosswalk: crosswalk/knoxcall.yml
+  concepts:
+  - agent_run
+  - agent_tool
+  - ai_agent
+- provider: koreai
+  apis_io: https://apis.io/providers/koreai/
+  crosswalk: crosswalk/koreai.yml
+  concepts:
+  - agent_run
+  - ai_agent
+- provider: langchain
+  apis_io: https://apis.io/providers/langchain/
+  crosswalk: crosswalk/langchain.yml
+  concepts:
+  - agent_run
+  - agent_thread
+  - agent_tool
+  - ai_agent
+- provider: langdock
+  apis_io: https://apis.io/providers/langdock/
+  crosswalk: crosswalk/langdock.yml
+  concepts:
+  - agent_run
+  - ai_agent
+- provider: letta
+  apis_io: https://apis.io/providers/letta/
+  crosswalk: crosswalk/letta.yml
+  concepts:
+  - agent_run
+  - agent_thread
+  - agent_tool
+  - ai_agent
+- provider: liars-town
+  apis_io: https://apis.io/providers/liars-town/
+  crosswalk: crosswalk/liars-town.yml
+  concepts:
+  - ai_agent
+- provider: llama-box
+  apis_io: https://apis.io/providers/llama-box/
+  crosswalk: crosswalk/llama-box.yml
+  concepts:
+  - ai_agent
+- provider: luthersystems-com
+  apis_io: https://apis.io/providers/luthersystems-com/
+  crosswalk: crosswalk/luthersystems-com.yml
+  concepts:
+  - ai_agent
+- provider: lvlltd-com
+  apis_io: https://apis.io/providers/lvlltd-com/
+  crosswalk: crosswalk/lvlltd-com.yml
+  concepts:
+  - ai_agent
+- provider: macaroonnetwork-com
+  apis_io: https://apis.io/providers/macaroonnetwork-com/
+  crosswalk: crosswalk/macaroonnetwork-com.yml
+  concepts:
+  - ai_agent
+- provider: mastra
+  apis_io: https://apis.io/providers/mastra/
+  crosswalk: crosswalk/mastra.yml
+  concepts:
+  - agent_run
+  - agent_thread
+  - agent_tool
+  - ai_agent
+- provider: matchitup-in
+  apis_io: https://apis.io/providers/matchitup-in/
+  crosswalk: crosswalk/matchitup-in.yml
+  concepts:
+  - agent_thread
+  - ai_agent
+- provider: maven-agi
+  apis_io: https://apis.io/providers/maven-agi/
+  crosswalk: crosswalk/maven-agi.yml
+  concepts:
+  - agent_thread
+  - ai_agent
+- provider: mem0
+  apis_io: https://apis.io/providers/mem0/
+  crosswalk: crosswalk/mem0.yml
+  concepts:
+  - agent_run
+  - ai_agent
+- provider: meta-agent-tools
+  apis_io: https://apis.io/providers/meta-agent-tools/
+  crosswalk: crosswalk/meta-agent-tools.yml
+  concepts:
+  - agent_tool
+  - ai_agent
+- provider: natural-ai
+  apis_io: https://apis.io/providers/natural-ai/
+  crosswalk: crosswalk/natural-ai.yml
+  concepts:
+  - ai_agent
+- provider: neuphonic
+  apis_io: https://apis.io/providers/neuphonic/
+  crosswalk: crosswalk/neuphonic.yml
+  concepts:
+  - ai_agent
+- provider: nexosai
+  apis_io: https://apis.io/providers/nexosai/
+  crosswalk: crosswalk/nexosai.yml
+  concepts:
+  - ai_agent
+- provider: nimbleway
+  apis_io: https://apis.io/providers/nimbleway/
+  crosswalk: crosswalk/nimbleway.yml
+  concepts:
+  - agent_run
+  - ai_agent
+- provider: onchainagentintel-io
+  apis_io: https://apis.io/providers/onchainagentintel-io/
+  crosswalk: crosswalk/onchainagentintel-io.yml
+  concepts:
+  - ai_agent
+- provider: onecli
+  apis_io: https://apis.io/providers/onecli/
+  crosswalk: crosswalk/onecli.yml
+  concepts:
+  - ai_agent
+- provider: open-poker
+  apis_io: https://apis.io/providers/open-poker/
+  crosswalk: crosswalk/open-poker.yml
+  concepts:
+  - ai_agent
+- provider: openhands
+  apis_io: https://apis.io/providers/openhands/
+  crosswalk: crosswalk/openhands.yml
+  concepts:
+  - agent_thread
+  - ai_agent
+- provider: openwork
+  apis_io: https://apis.io/providers/openwork/
+  crosswalk: crosswalk/openwork.yml
+  concepts:
+  - agent_tool
+  - ai_agent
+- provider: orthogonal
+  apis_io: https://apis.io/providers/orthogonal/
+  crosswalk: crosswalk/orthogonal.yml
+  concepts:
+  - agent_thread
+  - ai_agent
+- provider: outrival
+  apis_io: https://apis.io/providers/outrival/
+  crosswalk: crosswalk/outrival.yml
+  concepts:
+  - ai_agent
+- provider: paid
+  apis_io: https://apis.io/providers/paid/
+  crosswalk: crosswalk/paid.yml
+  concepts:
+  - ai_agent
+- provider: perplexity
+  apis_io: https://apis.io/providers/perplexity/
+  crosswalk: crosswalk/perplexity.yml
+  concepts:
+  - ai_agent
+- provider: phonic
+  apis_io: https://apis.io/providers/phonic/
+  crosswalk: crosswalk/phonic.yml
+  concepts:
+  - agent_thread
+  - agent_tool
+  - ai_agent
+- provider: pipecat-ai
+  apis_io: https://apis.io/providers/pipecat-ai/
+  crosswalk: crosswalk/pipecat-ai.yml
+  concepts:
+  - agent_thread
+  - ai_agent
+- provider: pipeshub
+  apis_io: https://apis.io/providers/pipeshub/
+  crosswalk: crosswalk/pipeshub.yml
+  concepts:
+  - agent_thread
+  - ai_agent
+- provider: postiz
+  apis_io: https://apis.io/providers/postiz/
+  crosswalk: crosswalk/postiz.yml
+  concepts:
+  - ai_agent
+- provider: qliksense
+  apis_io: https://apis.io/providers/qliksense/
+  crosswalk: crosswalk/qliksense.yml
+  concepts:
+  - agent_run
+  - agent_thread
+  - ai_agent
+- provider: recall
+  apis_io: https://apis.io/providers/recall/
+  crosswalk: crosswalk/recall.yml
+  concepts:
+  - ai_agent
+- provider: recall-labs
+  apis_io: https://apis.io/providers/recall-labs/
+  crosswalk: crosswalk/recall-labs.yml
+  concepts:
+  - ai_agent
+- provider: relevance-ai
+  apis_io: https://apis.io/providers/relevance-ai/
+  crosswalk: crosswalk/relevance-ai.yml
+  concepts:
+  - agent_run
+  - agent_thread
+  - agent_tool
+  - ai_agent
+- provider: replyrai
+  apis_io: https://apis.io/providers/replyrai/
+  crosswalk: crosswalk/replyrai.yml
+  concepts:
+  - agent_tool
+  - ai_agent
+- provider: restack
+  apis_io: https://apis.io/providers/restack/
+  crosswalk: crosswalk/restack.yml
+  concepts:
+  - ai_agent
+- provider: runloop-ai
+  apis_io: https://apis.io/providers/runloop-ai/
+  crosswalk: crosswalk/runloop-ai.yml
+  concepts:
+  - agent_run
+  - ai_agent
+- provider: scope3
+  apis_io: https://apis.io/providers/scope3/
+  crosswalk: crosswalk/scope3.yml
+  concepts:
+  - ai_agent
+- provider: seekr
+  apis_io: https://apis.io/providers/seekr/
+  crosswalk: crosswalk/seekr.yml
+  concepts:
+  - agent_run
+  - agent_thread
+  - agent_tool
+  - ai_agent
+- provider: snhp-dev
+  apis_io: https://apis.io/providers/snhp-dev/
+  crosswalk: crosswalk/snhp-dev.yml
+  concepts:
+  - ai_agent
+- provider: speko
+  apis_io: https://apis.io/providers/speko/
+  crosswalk: crosswalk/speko.yml
+  concepts:
+  - ai_agent
+- provider: sponge
+  apis_io: https://apis.io/providers/sponge/
+  crosswalk: crosswalk/sponge.yml
+  concepts:
+  - ai_agent
+- provider: supernormal
+  apis_io: https://apis.io/providers/supernormal/
+  crosswalk: crosswalk/supernormal.yml
+  concepts:
+  - ai_agent
+- provider: sweep
+  apis_io: https://apis.io/providers/sweep/
+  crosswalk: crosswalk/sweep.yml
+  concepts:
+  - agent_thread
+  - ai_agent
+- provider: syllable
+  apis_io: https://apis.io/providers/syllable/
+  crosswalk: crosswalk/syllable.yml
+  concepts:
+  - agent_thread
+  - agent_tool
+  - ai_agent
+- provider: synthflow
+  apis_io: https://apis.io/providers/synthflow/
+  crosswalk: crosswalk/synthflow.yml
+  concepts:
+  - ai_agent
+- provider: tale-dev
+  apis_io: https://apis.io/providers/tale-dev/
+  crosswalk: crosswalk/tale-dev.yml
+  concepts:
+  - agent_run
+  - agent_thread
+  - ai_agent
+- provider: talkpush
+  apis_io: https://apis.io/providers/talkpush/
+  crosswalk: crosswalk/talkpush.yml
+  concepts:
+  - ai_agent
+- provider: taskfolk
+  apis_io: https://apis.io/providers/taskfolk/
+  crosswalk: crosswalk/taskfolk.yml
+  concepts:
+  - agent_run
+  - ai_agent
+- provider: tembo
+  apis_io: https://apis.io/providers/tembo/
+  crosswalk: crosswalk/tembo.yml
+  concepts:
+  - agent_run
+  - ai_agent
+- provider: terminal-use
+  apis_io: https://apis.io/providers/terminal-use/
+  crosswalk: crosswalk/terminal-use.yml
+  concepts:
+  - ai_agent
+- provider: tetrascience
+  apis_io: https://apis.io/providers/tetrascience/
+  crosswalk: crosswalk/tetrascience.yml
+  concepts:
+  - ai_agent
+- provider: thehiveryiq-com
+  apis_io: https://apis.io/providers/thehiveryiq-com/
+  crosswalk: crosswalk/thehiveryiq-com.yml
+  concepts:
+  - agent_run
+  - agent_tool
+  - ai_agent
+- provider: toolhouse
+  apis_io: https://apis.io/providers/toolhouse/
+  crosswalk: crosswalk/toolhouse.yml
+  concepts:
+  - agent_run
+  - agent_thread
+  - ai_agent
+- provider: tray-ai
+  apis_io: https://apis.io/providers/tray-ai/
+  crosswalk: crosswalk/tray-ai.yml
+  concepts:
+  - ai_agent
+- provider: unisson
+  apis_io: https://apis.io/providers/unisson/
+  crosswalk: crosswalk/unisson.yml
+  concepts:
+  - agent_run
+  - agent_thread
+  - ai_agent
+- provider: vapi
+  apis_io: https://apis.io/providers/vapi/
+  crosswalk: crosswalk/vapi.yml
+  concepts:
+  - agent_tool
+  - ai_agent
+- provider: vapi-ai
+  apis_io: https://apis.io/providers/vapi-ai/
+  crosswalk: crosswalk/vapi-ai.yml
+  concepts:
+  - agent_tool
+  - ai_agent
+- provider: vectara
+  apis_io: https://apis.io/providers/vectara/
+  crosswalk: crosswalk/vectara.yml
+  concepts:
+  - agent_thread
+  - agent_tool
+  - ai_agent
+- provider: vocode
+  apis_io: https://apis.io/providers/vocode/
+  crosswalk: crosswalk/vocode.yml
+  concepts:
+  - ai_agent
+- provider: wagerx-io
+  apis_io: https://apis.io/providers/wagerx-io/
+  crosswalk: crosswalk/wagerx-io.yml
+  concepts:
+  - ai_agent
+- provider: warp
+  apis_io: https://apis.io/providers/warp/
+  crosswalk: crosswalk/warp.yml
+  concepts:
+  - agent_run
+  - agent_thread
+  - ai_agent
+- provider: webcrawlerapi-com
+  apis_io: https://apis.io/providers/webcrawlerapi-com/
+  crosswalk: crosswalk/webcrawlerapi-com.yml
+  concepts:
+  - ai_agent
+- provider: x
+  apis_io: https://apis.io/providers/x/
+  crosswalk: crosswalk/x.yml
+  concepts:
+  - agent_thread
+  - ai_agent
+- provider: zavu
+  apis_io: https://apis.io/providers/zavu/
+  crosswalk: crosswalk/zavu.yml
+  concepts:
+  - agent_run
+  - agent_tool
+  - ai_agent
+- provider: zillapi
+  apis_io: https://apis.io/providers/zillapi/
+  crosswalk: crosswalk/zillapi.yml
+  concepts:
+  - ai_agent
+- provider: zoca
+  apis_io: https://apis.io/providers/zoca/
+  crosswalk: crosswalk/zoca.yml
+  concepts:
+  - agent_thread
+  - agent_tool
+  - ai_agent
+- provider: zoominfo
+  apis_io: https://apis.io/providers/zoominfo/
+  crosswalk: crosswalk/zoominfo.yml
+  concepts:
+  - agent_run
+  - ai_agent

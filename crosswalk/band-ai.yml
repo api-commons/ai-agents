@@ -1,0 +1,37 @@
+provider: band-ai
+apis_io: https://apis.io/providers/band-ai/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agents
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/band-ai-openapi-original.json#DELETE /api/v1/me/agents/{id}
+    - openapi/_original/band-ai-openapi-original.json#GET /api/v1/me/agents
+  agent_thread:
+    path_segment:
+    - chats
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/band-ai-openapi-original.json#GET /api/v1/agent/chats
+    - openapi/_original/band-ai-openapi-original.json#GET /api/v1/agent/chats/{id}
+    - openapi/_original/band-ai-openapi-original.json#GET /api/v1/me/chats
+    - openapi/_original/band-ai-openapi-original.json#GET /api/v1/me/chats/{id}
+    - openapi/_original/band-ai-openapi-original.json#PATCH /api/v1/agent/chats/{id}
+  agent_run:
+    path_segment:
+    - tasks
+    properties:
+      status:
+      - state
+      - status
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/band-ai-openapi-original.json#GET /api/v1/agent/chats/{chat_id}/tasks
+    - openapi/_original/band-ai-openapi-original.json#GET /api/v1/agent/chats/{chat_id}/tasks/{id}
+    - openapi/_original/band-ai-openapi-original.json#POST /api/v1/agent/chats/{chat_id}/tasks
+    - openapi/_original/band-ai-openapi-original.json#POST /api/v1/agent/chats/{chat_id}/tasks/{id}

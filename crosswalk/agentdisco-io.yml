@@ -1,0 +1,18 @@
+provider: agentdisco-io
+apis_io: https://apis.io/providers/agentdisco-io/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agent
+    properties:
+      name: label
+      id: id
+      created_at: createdAt
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/agentdisco-io-openapi.json#GET /api/v1/auth/colony/agent
+    - openapi/_original/agentdisco-io-openapi.json#POST /api/v1/auth/colony/agent
+    - openapi/_original/agentdisco-io-openapi.yml#GET /api/v1/auth/colony/agent
+    - openapi/_original/agentdisco-io-openapi.yml#POST /api/v1/auth/colony/agent

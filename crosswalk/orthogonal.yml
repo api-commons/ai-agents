@@ -1,0 +1,28 @@
+provider: orthogonal
+apis_io: https://apis.io/providers/orthogonal/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agents
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/orthogonal-marketplace-openapi.json#DELETE /agentphone/v1/agents/{agentId}
+    - openapi/_original/orthogonal-marketplace-openapi.json#GET /agentphone/v1/agents/{agentId}
+    - openapi/_original/orthogonal-marketplace-openapi.json#GET /notte/agents/{agent_id}
+    - openapi/_original/orthogonal-marketplace-openapi.json#PATCH /agentphone/v1/agents/{agentId}
+    - openapi/_original/orthogonal-marketplace-openapi.json#POST /agentphone/v1/agents
+  agent_thread:
+    path_segment:
+    - threads
+    - conversations
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/orthogonal-marketplace-openapi.json#DELETE /agentmail/v0/inboxes/{inbox_id}/threads/{thread_id}
+    - openapi/_original/orthogonal-marketplace-openapi.json#GET /agentmail/v0/inboxes/{inbox_id}/threads
+    - openapi/_original/orthogonal-marketplace-openapi.json#GET /agentmail/v0/inboxes/{inbox_id}/threads/{thread_id}
+    - openapi/_original/orthogonal-marketplace-openapi.json#GET /agentphone/v1/agents/{agentId}/conversations
+    - openapi/_original/orthogonal-marketplace-openapi.json#GET /agentphone/v1/conversations/{conversationId}

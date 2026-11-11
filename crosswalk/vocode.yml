@@ -1,0 +1,16 @@
+provider: vocode
+apis_io: https://apis.io/providers/vocode/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agents
+    properties:
+      name: name
+      id: id
+      instructions: prompt
+      tools: actions
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/vocode-openapi.yml#GET /agents

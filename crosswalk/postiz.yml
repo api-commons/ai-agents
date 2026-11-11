@@ -1,0 +1,13 @@
+provider: postiz
+apis_io: https://apis.io/providers/postiz/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agent
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/postiz-platform-swagger-openapi.json#POST /copilot/agent
+    - openapi/_original/postiz-platform-swagger-openapi.json#POST /public/agent

@@ -1,0 +1,20 @@
+provider: natural-ai
+apis_io: https://apis.io/providers/natural-ai/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agents
+    properties:
+      name: name
+      id: id
+      description: description
+      metadata: attributes
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/natural-ai-openapi-original.json#DELETE /agents/{agentId}
+    - openapi/_original/natural-ai-openapi-original.json#DELETE /customers/{customerId}/agents/{agentId}
+    - openapi/_original/natural-ai-openapi-original.json#DELETE /wallets/{walletId}/agents/{agentId}
+    - openapi/_original/natural-ai-openapi-original.json#GET /agents
+    - openapi/_original/natural-ai-openapi-original.json#GET /agents/{agentId}

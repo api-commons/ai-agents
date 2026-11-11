@@ -1,0 +1,31 @@
+provider: gojiberry-ai
+apis_io: https://apis.io/providers/gojiberry-ai/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agent
+    properties:
+      name: name
+      id: id
+      created_at: createdAt
+      updated_at: updatedAt
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/gojiberry-ai-openapi.json#DELETE /v1/agent/{id}
+    - openapi/_original/gojiberry-ai-openapi.json#GET /v1/agent
+    - openapi/_original/gojiberry-ai-openapi.json#GET /v1/agent/{id}
+    - openapi/_original/gojiberry-ai-openapi.json#PATCH /v1/agent/{id}
+    - openapi/_original/gojiberry-ai-openapi.json#POST /v1/agent
+  agent_thread:
+    path_segment:
+    - threads
+    properties:
+      id: id
+      created_at: createdAt
+      updated_at: updatedAt
+      user_id: userId
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/gojiberry-ai-openapi.json#GET /v1/unibox/threads

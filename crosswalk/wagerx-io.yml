@@ -1,0 +1,18 @@
+provider: wagerx-io
+apis_io: https://apis.io/providers/wagerx-io/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agent
+    properties:
+      name: name
+      description: description
+      tools:
+      - capabilities
+      - skills
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/wagerx-io-openapi-original.json#GET /.well-known/agent.json
+    - openapi/_original/wagerx-io-openapi.yml#GET /.well-known/agent.json

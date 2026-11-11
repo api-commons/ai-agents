@@ -1,0 +1,85 @@
+provider: amigo
+apis_io: https://apis.io/providers/amigo/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agents
+    - agent
+    properties:
+      name: name
+      id:
+      - id
+      - agent_id
+      created_at: created_at
+      description: description
+      updated_at: updated_at
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/amigo-classic-openapi-original.json#DELETE /v1/{organization}/organization/agent/{agent_id}/
+    - openapi/_original/amigo-classic-openapi-original.json#GET /v1/{organization}/organization/agent
+    - openapi/_original/amigo-classic-openapi-original.json#POST /v1/{organization}/organization/agent
+    - openapi/_original/amigo-classic-openapi-original.json#POST /v1/{organization}/organization/agent/{agent_id}/
+    - openapi/_original/amigo-platform-openapi-original.json#DELETE /v1/{workspace_id}/agents/{agent_id}
+  agent_thread:
+    path_segment:
+    - conversations
+    - conversation
+    properties:
+      id: id
+      created_at:
+      - created_at
+      - created
+      metadata: tags
+      status: status
+      updated_at:
+      - updated_at
+      - updated
+      messages: turns
+      conversation_id: conversation_id
+      user_id: user_id
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/amigo-classic-openapi-original.json#GET /v1/{organization}/conversation/
+    - openapi/_original/amigo-classic-openapi-original.json#POST /v1/{organization}/conversation/
+    - openapi/_original/amigo-platform-openapi-original.json#DELETE /v1/{workspace_id}/conversations/{conversation_id}
+    - openapi/_original/amigo-platform-openapi-original.json#GET /v1/{workspace_id}/conversations/{conversation_id}
+    - openapi/_original/amigo-platform-openapi-original.json#POST /v1/{workspace_id}/conversations
+  agent_run:
+    path_segment:
+    - runs
+    properties:
+      status: status
+      id: id
+      created_at: created_at
+      completed_at:
+      - ended_at
+      - completed_at
+      started_at: started_at
+      metadata: tags
+      run_id: run_id
+      error: error
+      updated_at: updated_at
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/amigo-platform-openapi-original.json#GET /v1/{workspace_id}/runs
+    - openapi/_original/amigo-platform-openapi-original.json#GET /v1/{workspace_id}/runs/{run_id}
+    - openapi/_original/amigo-platform-openapi-original.json#GET /v1/{workspace_id}/simulations/runs
+    - openapi/_original/amigo-platform-openapi-original.json#GET /v1/{workspace_id}/simulations/runs/{run_id}
+    - openapi/_original/amigo-platform-openapi-original.json#GET /v1/{workspace_id}/simulations/suites/{suite_id}/runs
+  agent_tool:
+    path_segment:
+    - tool
+    properties:
+      name: name
+      id: id
+      description: description
+      created_at: created_at
+      updated_at: updated_at
+    core_coverage: 0.8
+    evidence:
+    - openapi/_original/amigo-classic-openapi-original.json#DELETE /v1/{organization}/tool/{tool_id}
+    - openapi/_original/amigo-classic-openapi-original.json#GET /v1/{organization}/tool/
+    - openapi/_original/amigo-classic-openapi-original.json#POST /v1/{organization}/tool/
+    - openapi/_original/amigo-classic-openapi-original.json#POST /v1/{organization}/tool/{tool_id}

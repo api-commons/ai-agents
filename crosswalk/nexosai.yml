@@ -1,0 +1,14 @@
+provider: nexosai
+apis_io: https://apis.io/providers/nexosai/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agents
+    - assistants
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/nexosai-gateway-openapi-original.yml#GET /v1/agents
+    - openapi/_original/nexosai-gateway-openapi-original.yml#GET /v1/assistants

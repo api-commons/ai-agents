@@ -1,0 +1,17 @@
+provider: anp2-com
+apis_io: https://apis.io/providers/anp2-com/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agents
+    - agent
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/anp2-com-openapi.json#GET /agents
+    - openapi/_original/anp2-com-relay-openapi.json#GET /.well-known/agent.json
+    - openapi/_original/anp2-com-relay-openapi.json#GET /agents
+    - openapi/_original/anp2-com-relay-openapi.json#GET /agents/{agent_id}
+    - openapi/_original/anp2-com-relay-openapi.json#GET /api/.well-known/agent.json

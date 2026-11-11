@@ -1,0 +1,33 @@
+provider: beyond-presence
+apis_io: https://apis.io/providers/beyond-presence/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agents
+    properties:
+      name: name
+      id: id
+      instructions: system_prompt
+      tools: capabilities
+      model: llm
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/beyond-presence-openapi.json#DELETE /v1/agents/{id}
+    - openapi/_original/beyond-presence-openapi.json#GET /v1/agents
+    - openapi/_original/beyond-presence-openapi.json#GET /v1/agents/{id}
+    - openapi/_original/beyond-presence-openapi.json#PATCH /v1/agents/{id}
+    - openapi/_original/beyond-presence-openapi.json#POST /v1/agents
+  agent_thread:
+    path_segment:
+    - conversations
+    properties:
+      id: id
+      metadata: tags
+      status: status
+      agent_id: agent_id
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/beyond-presence-openapi.json#GET /v1/conversations
+    - openapi/_original/beyond-presence-openapi.json#GET /v1/conversations/{id}

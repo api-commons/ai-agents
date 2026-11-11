@@ -1,0 +1,19 @@
+provider: greenhelix-net
+apis_io: https://apis.io/providers/greenhelix-net/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agents
+    properties:
+      name: name
+      id: agent_id
+      tools: capabilities
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/greenhelix-net-a2a-commerce-gateway-openapi.yml#GET /v1/identity/agents
+    - openapi/_original/greenhelix-net-a2a-commerce-gateway-openapi.yml#GET /v1/identity/agents/{agent_id}
+    - openapi/_original/greenhelix-net-a2a-commerce-gateway-openapi.yml#GET /v1/marketplace/agents
+    - openapi/_original/greenhelix-net-a2a-commerce-gateway-openapi.yml#POST /v1/identity/agents
+    - openapi/_original/greenhelix-net-openapi.json#GET /v1/identity/agents

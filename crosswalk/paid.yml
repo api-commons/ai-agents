@@ -1,0 +1,19 @@
+provider: paid
+apis_io: https://apis.io/providers/paid/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agents
+    properties:
+      name: name
+      id: id
+      description: description
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/paid-v1.json#DELETE /agents/{agentId}
+    - openapi/_original/paid-v1.json#GET /agents
+    - openapi/_original/paid-v1.json#GET /agents/{agentId}
+    - openapi/_original/paid-v1.json#POST /agents
+    - openapi/_original/paid-v1.json#PUT /agents/{agentId}

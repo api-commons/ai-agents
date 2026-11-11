@@ -1,0 +1,43 @@
+provider: mastra
+apis_io: https://apis.io/providers/mastra/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agents
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/mastra-openapi.yml#GET /api/agents
+    - openapi/_original/mastra-openapi.yml#GET /api/agents/{agentId}
+  agent_thread:
+    path_segment:
+    - threads
+    - conversations
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/mastra-openapi.yml#DELETE /api/memory/threads/{threadId}
+    - openapi/_original/mastra-openapi.yml#GET /api/memory/threads
+    - openapi/_original/mastra-openapi.yml#GET /api/memory/threads/{threadId}
+    - openapi/_original/mastra-openapi.yml#GET /api/v1/conversations/{conversationId}
+    - openapi/_original/mastra-openapi.yml#POST /api/memory/threads
+  agent_run:
+    path_segment:
+    - runs
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/mastra-openapi.yml#GET /api/workflows/{workflowId}/runs
+    - openapi/_original/mastra-openapi.yml#GET /api/workflows/{workflowId}/runs/{runId}
+  agent_tool:
+    path_segment:
+    - tools
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/mastra-openapi.yml#GET /api/agents/{agentId}/tools
+    - openapi/_original/mastra-openapi.yml#GET /api/mcp/servers/{serverId}/tools
+    - openapi/_original/mastra-openapi.yml#GET /api/tools
+    - openapi/_original/mastra-openapi.yml#GET /api/tools/{toolId}

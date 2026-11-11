@@ -1,0 +1,24 @@
+provider: meta-agent-tools
+apis_io: https://apis.io/providers/meta-agent-tools/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agents
+    - agent
+    properties:
+      metadata: tags
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/meta-agent-tools-openapi.json#GET /agent.json
+    - openapi/_original/meta-agent-tools-openapi.json#GET /api/a2a/agents
+    - openapi/_original/meta-agent-tools-openapi.json#GET /api/a2a/agents/{chave}
+  agent_tool:
+    path_segment:
+    - tools
+    properties:
+      id: id
+    core_coverage: 0.2
+    evidence:
+    - openapi/_original/meta-agent-tools-openapi.json#GET /api/listings/{id}/tools

@@ -1,0 +1,13 @@
+provider: atomadic-tech
+apis_io: https://apis.io/providers/atomadic-tech/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agent
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/atomadic-tech-openapi.json#GET /.well-known/agent.json
+    - openapi/_original/atomadic-tech-openapi.yml#GET /.well-known/agent.json

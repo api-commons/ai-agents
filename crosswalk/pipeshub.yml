@@ -1,0 +1,50 @@
+provider: pipeshub
+apis_io: https://apis.io/providers/pipeshub/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agents
+    properties:
+      name:
+      - name
+      - displayName
+      id: _id
+      description: description
+      instructions:
+      - instructions
+      - systemPrompt
+      metadata: tags
+      tools:
+      - skills
+      - tools
+      status: status
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/pipeshub-openapi.yaml#DELETE /agents/{agentKey}
+    - openapi/_original/pipeshub-openapi.yaml#GET /agents
+    - openapi/_original/pipeshub-openapi.yaml#GET /agents/{agentKey}
+    - openapi/_original/pipeshub-openapi.yaml#GET /toolsets/agents/{agentKey}
+    - openapi/_original/pipeshub-openapi.yaml#PUT /agents/{agentKey}
+  agent_thread:
+    path_segment:
+    - conversations
+    properties:
+      id:
+      - _id
+      - id
+      created_at: createdAt
+      name: title
+      metadata: metadata
+      status: status
+      updated_at: updatedAt
+      messages: messages
+      user_id: userId
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/pipeshub-openapi.yaml#DELETE /agents/{agentKey}/conversations/{conversationId}
+    - openapi/_original/pipeshub-openapi.yaml#DELETE /conversations/{conversationId}
+    - openapi/_original/pipeshub-openapi.yaml#GET /agents/{agentKey}/conversations
+    - openapi/_original/pipeshub-openapi.yaml#GET /agents/{agentKey}/conversations/{conversationId}
+    - openapi/_original/pipeshub-openapi.yaml#GET /conversations

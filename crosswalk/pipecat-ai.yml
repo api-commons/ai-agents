@@ -1,0 +1,25 @@
+provider: pipecat-ai
+apis_io: https://apis.io/providers/pipecat-ai/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agents
+    properties:
+      name: name
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/pipecat-ai-openapi.yml#DELETE /agents/{id}
+    - openapi/_original/pipecat-ai-openapi.yml#GET /agents
+    - openapi/_original/pipecat-ai-openapi.yml#GET /agents/{id}
+    - openapi/_original/pipecat-ai-openapi.yml#PATCH /agents/{id}
+    - openapi/_original/pipecat-ai-openapi.yml#POST /agents
+  agent_thread:
+    path_segment:
+    - sessions
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/pipecat-ai-openapi.yml#GET /agents/{id}/sessions
+    - openapi/_original/pipecat-ai-openapi.yml#GET /agents/{id}/sessions/{session_id}

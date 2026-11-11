@@ -1,0 +1,14 @@
+provider: liars-town
+apis_io: https://apis.io/providers/liars-town/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - bots
+    properties:
+      name: name
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/liars-town-openapi.json#POST /api/bots
+    - openapi/_original/liars-town-openapi.yml#POST /api/bots

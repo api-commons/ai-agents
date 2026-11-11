@@ -1,0 +1,18 @@
+provider: elementum
+apis_io: https://apis.io/providers/elementum/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agents
+    properties:
+      name: name
+      id: id
+      description: description
+      tools: tools
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/elementum-openapi.json#GET /apps/{alias}/agents
+    - openapi/_original/elementum-openapi.json#POST /apps/{alias}/agents
+    - openapi/_original/elementum-openapi.json#PUT /apps/{alias}/agents/{id}

@@ -1,0 +1,30 @@
+provider: maven-agi
+apis_io: https://apis.io/providers/maven-agi/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agents
+    properties:
+      name: name
+      id: agentId
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/maven-agi-openapi.yml#DELETE /organizations/{organizationReferenceId}/agents/{agentReferenceId}
+    - openapi/_original/maven-agi-openapi.yml#GET /organizations/{organizationReferenceId}/agents
+    - openapi/_original/maven-agi-openapi.yml#GET /organizations/{organizationReferenceId}/agents/{agentReferenceId}
+    - openapi/_original/maven-agi-openapi.yml#PATCH /organizations/{organizationReferenceId}/agents/{agentReferenceId}
+    - openapi/_original/maven-agi-openapi.yml#POST /agents
+  agent_thread:
+    path_segment:
+    - conversations
+    properties:
+      user_id: userId
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/maven-agi-openapi.yml#DELETE /conversations/{conversationId}
+    - openapi/_original/maven-agi-openapi.yml#GET /conversations/{conversationId}
+    - openapi/_original/maven-agi-openapi.yml#PATCH /conversations/{conversationId}
+    - openapi/_original/maven-agi-openapi.yml#POST /charts/conversations
+    - openapi/_original/maven-agi-openapi.yml#POST /conversations

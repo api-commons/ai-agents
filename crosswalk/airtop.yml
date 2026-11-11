@@ -1,0 +1,30 @@
+provider: airtop
+apis_io: https://apis.io/providers/airtop/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agents
+    properties:
+      name: name
+      id: id
+      created_at: createdAt
+      description: description
+      updated_at: updatedAt
+      model: llmModel
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/airtop-openapi.json#DELETE /v2/agents
+    - openapi/_original/airtop-openapi.json#GET /v2/agents
+    - openapi/_original/airtop-openapi.json#GET /v2/agents/{id}
+    - openapi/_original/airtop-openapi.json#PATCH /v2/agents/{id}
+    - openapi/_original/airtop-openapi.json#POST /v2/agents
+  agent_tool:
+    path_segment:
+    - tool
+    properties:
+      parameters: arguments
+    core_coverage: 0.2
+    evidence:
+    - openapi/_original/airtop-openapi.json#POST /v2/sessions/{sessionId}/service/tool

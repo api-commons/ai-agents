@@ -1,0 +1,41 @@
+provider: dyno
+apis_io: https://apis.io/providers/dyno/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agents
+    properties:
+      name: name
+      description: description
+      tools: tool_ids
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/dyno-phi-openapi-original.json#GET /v1/phi/agents/
+    - openapi/_original/dyno-phi-openapi-original.json#GET /v1/phi/agents/{agent_id}
+    - openapi/_original/dyno-phi-openapi-original.json#POST /v1/phi/agents/
+    - openapi/_original/dyno-phi-openapi-original.json#PUT /v1/phi/agents/{agent_id}
+    - openapi/_original/dyno-phi-openapi.yml#GET /v1/phi/agents/
+  agent_run:
+    path_segment:
+    - runs
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/dyno-phi-openapi-original.json#DELETE /runs/{run_id}
+    - openapi/_original/dyno-phi-openapi-original.json#GET /runs/{run_id}
+    - openapi/_original/dyno-phi-openapi-original.json#POST /runs
+    - openapi/_original/dyno-phi-openapi.yml#DELETE /runs/{run_id}
+    - openapi/_original/dyno-phi-openapi.yml#GET /runs/{run_id}
+  agent_tool:
+    path_segment:
+    - tools
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/dyno-phi-openapi-original.json#GET /v1/phi/tools/
+    - openapi/_original/dyno-phi-openapi-original.json#GET /v1/phi/tools/{tool_id}
+    - openapi/_original/dyno-phi-openapi-original.json#POST /v1/phi/agents/{agent_id}/tools
+    - openapi/_original/dyno-phi-openapi.yml#GET /v1/phi/tools/
+    - openapi/_original/dyno-phi-openapi.yml#GET /v1/phi/tools/{tool_id}

@@ -1,0 +1,18 @@
+provider: amazon-lex
+apis_io: https://apis.io/providers/amazon-lex/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - bots
+    properties:
+      name: name
+      description: description
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/amazon-lex-models-v2-openapi.yml#DELETE /bots/{botId}
+    - openapi/_original/amazon-lex-models-v2-openapi.yml#GET /bots/{botId}
+    - openapi/_original/amazon-lex-models-v2-openapi.yml#POST /bots
+    - openapi/_original/amazon-lex-models-v2-openapi.yml#PUT /bots
+    - openapi/_original/amazon-lex-models-v2-openapi.yml#PUT /bots/{botId}

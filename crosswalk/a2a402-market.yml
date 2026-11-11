@@ -1,0 +1,15 @@
+provider: a2a402-market
+apis_io: https://apis.io/providers/a2a402-market/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agents
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/a2a402-market-openapi.json#DELETE /human/agents/{agentId}
+    - openapi/_original/a2a402-market-openapi.json#PATCH /agents/{agentId}
+    - openapi/_original/a2a402-market-openapi.yml#DELETE /human/agents/{agentId}
+    - openapi/_original/a2a402-market-openapi.yml#PATCH /agents/{agentId}

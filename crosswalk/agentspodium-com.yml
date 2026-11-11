@@ -1,0 +1,39 @@
+provider: agentspodium-com
+apis_io: https://apis.io/providers/agentspodium-com/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agents
+    properties:
+      name: name
+      id: id
+      created_at: createdAt
+      tools:
+      - tools
+      - skills
+      model:
+      - model
+      - engine
+      status: status
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/agentspodium-com-openapi.json#DELETE /agents/{id}
+    - openapi/_original/agentspodium-com-openapi.json#GET /agents
+    - openapi/_original/agentspodium-com-openapi.json#GET /agents/{id}
+    - openapi/_original/agentspodium-com-openapi.json#POST /agents
+    - openapi/_original/agentspodium-com-openapi.yml#DELETE /agents/{id}
+  agent_tool:
+    path_segment:
+    - tools
+    properties:
+      name: name
+      id: id
+      created_at: createdAt
+    core_coverage: 0.6
+    evidence:
+    - openapi/_original/agentspodium-com-openapi.json#GET /tools
+    - openapi/_original/agentspodium-com-openapi.json#PATCH /agents/{id}/tools
+    - openapi/_original/agentspodium-com-openapi.yml#GET /tools
+    - openapi/_original/agentspodium-com-openapi.yml#PATCH /agents/{id}/tools

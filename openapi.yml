@@ -1,0 +1,392 @@
+openapi: 3.1.0
+info:
+  title: AI Agents (API Commons)
+  version: 0.1.0-draft.20261111
+  description: 'The common AI Agents interface, distilled from the harvested OpenAPI of 680 providers in the APIs.io
+    catalog. Not a product: no one serves this API. It is the shape the market already shares, measured, so that
+    providers, agents and integrators can map to one vocabulary. See profile.yml.'
+  license:
+    name: CC BY-NC-SA 4.0
+    url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+paths:
+  /ai-agents:
+    get:
+      operationId: listAiAgents
+      summary: List ai agents
+      tags:
+      - Ai Agents
+      x-commons-tier: core
+      x-commons-share: 0.885
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id001
+                  $ref: '#/components/schemas/AiAgent'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createAiAgent
+      summary: Create an ai agent
+      tags:
+      - Ai Agents
+      x-commons-tier: core
+      x-commons-share: 0.571
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id001
+  /ai-agents/{ai_agent_id}:
+    parameters:
+    - $ref: '#/components/parameters/ai_agent_id'
+    get:
+      operationId: getAiAgent
+      summary: Get an ai agent
+      tags:
+      - Ai Agents
+      x-commons-tier: core
+      x-commons-share: 0.622
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+    delete:
+      operationId: deleteAiAgent
+      summary: Delete an ai agent
+      tags:
+      - Ai Agents
+      x-commons-tier: extended
+      x-commons-share: 0.423
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+    patch:
+      operationId: updateAiAgent
+      summary: Update an ai agent
+      tags:
+      - Ai Agents
+      x-commons-tier: extended
+      x-commons-share: 0.417
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id001
+  /agent-threads:
+    get:
+      operationId: listAgentThreads
+      summary: List agent threads
+      tags:
+      - Agent Threads
+      x-commons-tier: core
+      x-commons-share: 0.904
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id002
+                  $ref: '#/components/schemas/AgentThread'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createAgentThread
+      summary: Create an agent thread
+      tags:
+      - Agent Threads
+      x-commons-tier: core
+      x-commons-share: 0.596
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id002
+  /agent-threads/{agent_thread_id}:
+    parameters:
+    - $ref: '#/components/parameters/agent_thread_id'
+    get:
+      operationId: getAgentThread
+      summary: Get an agent thread
+      tags:
+      - Agent Threads
+      x-commons-tier: core
+      x-commons-share: 0.788
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+    delete:
+      operationId: deleteAgentThread
+      summary: Delete an agent thread
+      tags:
+      - Agent Threads
+      x-commons-tier: core
+      x-commons-share: 0.5
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+    patch:
+      operationId: updateAgentThread
+      summary: Update an agent thread
+      tags:
+      - Agent Threads
+      x-commons-tier: extended
+      x-commons-share: 0.365
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id002
+  /agent-runs:
+    get:
+      operationId: listAgentRuns
+      summary: List agent runs
+      tags:
+      - Agent Runs
+      x-commons-tier: core
+      x-commons-share: 0.878
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id003
+                  $ref: '#/components/schemas/AgentRun'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createAgentRun
+      summary: Create an agent run
+      tags:
+      - Agent Runs
+      x-commons-tier: core
+      x-commons-share: 0.659
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id003
+  /agent-runs/{agent_run_id}:
+    parameters:
+    - $ref: '#/components/parameters/agent_run_id'
+    get:
+      operationId: getAgentRun
+      summary: Get an agent run
+      tags:
+      - Agent Runs
+      x-commons-tier: core
+      x-commons-share: 0.732
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+    delete:
+      operationId: deleteAgentRun
+      summary: Delete an agent run
+      tags:
+      - Agent Runs
+      x-commons-tier: extended
+      x-commons-share: 0.268
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+  /agent-tools:
+    get:
+      operationId: listAgentTools
+      summary: List agent tools
+      tags:
+      - Agent Tools
+      x-commons-tier: core
+      x-commons-share: 0.946
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id004
+                  $ref: '#/components/schemas/AgentTool'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createAgentTool
+      summary: Create an agent tool
+      tags:
+      - Agent Tools
+      x-commons-tier: core
+      x-commons-share: 0.595
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id004
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id004
+  /agent-tools/{agent_tool_id}:
+    parameters:
+    - $ref: '#/components/parameters/agent_tool_id'
+    delete:
+      operationId: deleteAgentTool
+      summary: Delete an agent tool
+      tags:
+      - Agent Tools
+      x-commons-tier: extended
+      x-commons-share: 0.486
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id004
+    get:
+      operationId: getAgentTool
+      summary: Get an agent tool
+      tags:
+      - Agent Tools
+      x-commons-tier: extended
+      x-commons-share: 0.486
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id004
+    patch:
+      operationId: updateAgentTool
+      summary: Update an agent tool
+      tags:
+      - Agent Tools
+      x-commons-tier: extended
+      x-commons-share: 0.405
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id004
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id004
+components:
+  schemas:
+    AiAgent:
+      $ref: ./schema/ai_agent.json
+    AgentThread:
+      $ref: ./schema/agent_thread.json
+    AgentRun:
+      $ref: ./schema/agent_run.json
+    AgentTool:
+      $ref: ./schema/agent_tool.json
+  parameters:
+    ai_agent_id:
+      name: ai_agent_id
+      in: path
+      required: true
+      schema:
+        type: string
+    agent_thread_id:
+      name: agent_thread_id
+      in: path
+      required: true
+      schema:
+        type: string
+    agent_run_id:
+      name: agent_run_id
+      in: path
+      required: true
+      schema:
+        type: string
+    agent_tool_id:
+      name: agent_tool_id
+      in: path
+      required: true
+      schema:
+        type: string

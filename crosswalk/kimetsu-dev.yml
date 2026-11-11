@@ -1,0 +1,16 @@
+provider: kimetsu-dev
+apis_io: https://apis.io/providers/kimetsu-dev/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agent
+    - agents
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/kimetsu-dev-agent-gateway-openapi.json#GET /.well-known/agent.json
+    - openapi/_original/kimetsu-dev-agent-gateway-openapi.json#GET /v1/sidequest/agents
+    - openapi/_original/kimetsu-dev-agent-gateway-openapi.yml#GET /.well-known/agent.json
+    - openapi/_original/kimetsu-dev-agent-gateway-openapi.yml#GET /v1/sidequest/agents

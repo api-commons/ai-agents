@@ -1,0 +1,23 @@
+provider: directhireagents-com
+apis_io: https://apis.io/providers/directhireagents-com/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agents
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/directhireagents-com-openapi-original.json#GET /agents
+    - openapi/_original/directhireagents-com-openapi-original.json#GET /agents/{id}
+    - openapi/_original/directhireagents-com-openapi.yml#GET /agents
+    - openapi/_original/directhireagents-com-openapi.yml#GET /agents/{id}
+  agent_thread:
+    path_segment:
+    - conversations
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/directhireagents-com-openapi-original.json#POST /conversations
+    - openapi/_original/directhireagents-com-openapi.yml#POST /conversations

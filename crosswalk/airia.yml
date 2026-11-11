@@ -1,0 +1,90 @@
+provider: airia
+apis_io: https://apis.io/providers/airia/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agents
+    - assistants
+    - agent
+    properties:
+      name: name
+      id: id
+      created_at: createdAt
+      description: description
+      updated_at: updatedAt
+      metadata:
+      - attributes
+      - metadata
+      tools:
+      - capabilities
+      - skills
+      - tools
+      status:
+      - status
+      - state
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/airia-openapi.yml#DELETE /v1/Assistants/{id}
+    - openapi/_original/airia-openapi.yml#DELETE /v1/governance/usecases/{id}/agents/{agentId}
+    - openapi/_original/airia-openapi.yml#GET /.well-known/agent.json
+    - openapi/_original/airia-openapi.yml#GET /marketplace/v1/Library/agents
+    - openapi/_original/airia-openapi.yml#GET /marketplace/v1/Library/agents/{id}
+  agent_thread:
+    path_segment:
+    - conversations
+    - conversation
+    properties:
+      id: id
+      created_at: createdAt
+      name:
+      - name
+      - title
+      updated_at: updatedAt
+      messages: messages
+      conversation_id: conversationId
+      user_id: userId
+      agent_id: assistantId
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/airia-openapi.yml#DELETE /v1/Conversations/{conversationId}
+    - openapi/_original/airia-openapi.yml#DELETE /v1/Users/{userId}/conversations
+    - openapi/_original/airia-openapi.yml#GET /v1/Artifact/conversation/{conversationId}
+    - openapi/_original/airia-openapi.yml#GET /v1/Conversations/{conversationId}
+    - openapi/_original/airia-openapi.yml#GET /v1/Users/{userId}/conversations
+  agent_run:
+    path_segment:
+    - tasks
+    - runs
+    properties:
+      status: status
+      id: id
+      error: error
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/airia-openapi.yml#GET /marketplace/v1/Library/agents/tasks
+    - openapi/_original/airia-openapi.yml#GET /v1/spm/attack-paths/runs
+  agent_tool:
+    path_segment:
+    - tools
+    - tool
+    properties:
+      name:
+      - name
+      - displayName
+      id: id
+      description: description
+      created_at: createdAt
+      parameters:
+      - parameters
+      - inputSchema
+      updated_at: updatedAt
+      type: toolType
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/airia-openapi.yml#DELETE /v1/Tools/{id}
+    - openapi/_original/airia-openapi.yml#GET /marketplace/v1/Library/tool/{toolType}
+    - openapi/_original/airia-openapi.yml#GET /marketplace/v1/Library/tools
+    - openapi/_original/airia-openapi.yml#GET /v1/McpDeployments/{deploymentId}/tools
+    - openapi/_original/airia-openapi.yml#GET /v1/Tools

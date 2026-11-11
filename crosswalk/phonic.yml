@@ -1,0 +1,50 @@
+provider: phonic
+apis_io: https://apis.io/providers/phonic/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agents
+    properties:
+      name: name
+      id: id
+      instructions: system_prompt
+      tools:
+      - tools
+      - integrations
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/phonic-openapi-original.yaml#DELETE /agents/{nameOrId}
+    - openapi/_original/phonic-openapi-original.yaml#GET /agents
+    - openapi/_original/phonic-openapi-original.yaml#GET /agents/{nameOrId}
+    - openapi/_original/phonic-openapi-original.yaml#PATCH /agents/{nameOrId}
+    - openapi/_original/phonic-openapi-original.yaml#POST /agents
+  agent_thread:
+    path_segment:
+    - conversations
+    properties:
+      id: id
+      metadata: metadata
+      agent_id: agent
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/phonic-openapi-original.yaml#DELETE /conversations/{id}
+    - openapi/_original/phonic-openapi-original.yaml#GET /conversations
+    - openapi/_original/phonic-openapi-original.yaml#GET /conversations/{id}
+  agent_tool:
+    path_segment:
+    - tools
+    properties:
+      name: name
+      id: id
+      description: description
+      parameters: parameters
+      type: type
+    core_coverage: 0.8
+    evidence:
+    - openapi/_original/phonic-openapi-original.yaml#DELETE /tools/{nameOrId}
+    - openapi/_original/phonic-openapi-original.yaml#GET /tools
+    - openapi/_original/phonic-openapi-original.yaml#GET /tools/{nameOrId}
+    - openapi/_original/phonic-openapi-original.yaml#PATCH /tools/{nameOrId}
+    - openapi/_original/phonic-openapi-original.yaml#POST /tools

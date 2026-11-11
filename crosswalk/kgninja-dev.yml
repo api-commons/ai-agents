@@ -1,0 +1,16 @@
+provider: kgninja-dev
+apis_io: https://apis.io/providers/kgninja-dev/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agent
+    properties:
+      name: name
+      id: id
+      description: description
+      tools: capabilities
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/kgninja-dev-openapi.json#GET /agent.json

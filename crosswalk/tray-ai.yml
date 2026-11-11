@@ -1,0 +1,18 @@
+provider: tray-ai
+apis_io: https://apis.io/providers/tray-ai/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agents
+    properties:
+      name: name
+      id: id
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/tray-ai-platform-api-published-openapi.yaml#DELETE /core/v1/workspaces/{workspace-id}/on-prem-agent-groups/{agent-group-id}/agents/{agent-id}
+    - openapi/_original/tray-ai-platform-api-published-openapi.yaml#GET /core/v1/workspaces/{workspace-id}/on-prem-agent-groups/{agent-group-id}/agents
+    - openapi/_original/tray-ai-platform-api-published-openapi.yaml#GET /core/v1/workspaces/{workspace-id}/on-prem-agent-groups/{agent-group-id}/agents/{agent-id}
+    - openapi/_original/tray-ai-platform-api-published-openapi.yaml#PATCH /core/v1/workspaces/{workspace-id}/on-prem-agent-groups/{agent-group-id}/agents/{agent-id}
+    - openapi/_original/tray-ai-platform-api-published-openapi.yaml#POST /core/v1/workspaces/{workspace-id}/on-prem-agent-groups/{agent-group-id}/agents

@@ -1,0 +1,23 @@
+provider: gitdealflow-com
+apis_io: https://apis.io/providers/gitdealflow-com/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agents
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/gitdealflow-com-signals-openapi.json#GET /api/agents.json
+    - openapi/_original/gitdealflow-com-signals-openapi.json#GET /api/v1/agents.json
+    - openapi/_original/gitdealflow-com-signals-openapi.yml#GET /api/agents.json
+    - openapi/_original/gitdealflow-com-signals-openapi.yml#GET /api/v1/agents.json
+  agent_tool:
+    path_segment:
+    - tools
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/gitdealflow-com-signals-openapi.json#GET /api/agent/tools
+    - openapi/_original/gitdealflow-com-signals-openapi.yml#GET /api/agent/tools

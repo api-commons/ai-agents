@@ -1,0 +1,19 @@
+provider: fullcast
+apis_io: https://apis.io/providers/fullcast/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - assistant
+    properties:
+      name: name
+      id: id
+      metadata: metadata
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/fullcast-assistant-openapi-original.json#DELETE /copilot-api/v1/assistant
+    - openapi/_original/fullcast-assistant-openapi-original.json#GET /copilot-api/v1/assistant
+    - openapi/_original/fullcast-assistant-openapi-original.json#PATCH /copilot-api/v1/assistant
+    - openapi/_original/fullcast-assistant-openapi-original.json#POST /copilot-api/v1/assistant
+    - openapi/_original/fullcast-assistant-openapi-original.json#PUT /copilot-api/v1/assistant

@@ -1,0 +1,49 @@
+provider: agntcy
+apis_io: https://apis.io/providers/agntcy/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agents
+    properties:
+      id: agent_id
+      metadata: metadata
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/agntcy-acp-openapi.json#GET /agents/{agent_id}
+  agent_thread:
+    path_segment:
+    - threads
+    properties:
+      id: id
+      created_at: created_at
+      metadata: metadata
+      status: status
+      updated_at: updated_at
+      messages: messages
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/agntcy-acp-openapi.json#DELETE /threads/{thread_id}
+    - openapi/_original/agntcy-acp-openapi.json#GET /threads/{thread_id}
+    - openapi/_original/agntcy-acp-openapi.json#PATCH /threads/{thread_id}
+    - openapi/_original/agntcy-acp-openapi.json#POST /threads
+  agent_run:
+    path_segment:
+    - runs
+    properties:
+      status: status
+      created_at: created_at
+      agent_id: agent_id
+      metadata: metadata
+      run_id: run_id
+      input: input
+      updated_at: updated_at
+      thread_id: thread_id
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/agntcy-acp-openapi.json#DELETE /runs/{run_id}
+    - openapi/_original/agntcy-acp-openapi.json#DELETE /threads/{thread_id}/runs/{run_id}
+    - openapi/_original/agntcy-acp-openapi.json#GET /runs/{run_id}
+    - openapi/_original/agntcy-acp-openapi.json#GET /threads/{thread_id}/runs
+    - openapi/_original/agntcy-acp-openapi.json#GET /threads/{thread_id}/runs/{run_id}

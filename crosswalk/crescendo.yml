@@ -1,0 +1,26 @@
+provider: crescendo
+apis_io: https://apis.io/providers/crescendo/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - bots
+    properties:
+      id: id
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/crescendo-platform-openapi-original.json#POST /api/v1/mcp/tenants/{tenantId}/bots
+  agent_thread:
+    path_segment:
+    - conversations
+    properties:
+      id: ID
+      metadata: Tags
+      agent_id:
+      - BotID
+      - AgentId
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/crescendo-platform-openapi-original.json#GET /api/v1/reporting/tenants/{tenantId}/assistant/conversations
+    - openapi/_original/crescendo-platform-openapi-original.json#GET /api/v1/reporting/tenants/{tenantId}/voc/conversations

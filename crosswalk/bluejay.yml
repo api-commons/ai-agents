@@ -1,0 +1,51 @@
+provider: bluejay
+apis_io: https://apis.io/providers/bluejay/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agents
+    - agent
+    properties:
+      name: name
+      id:
+      - id
+      - agent_id
+      created_at: created_at
+      updated_at: updated_at
+      status: status
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/bluejay-openapi.json#DELETE /v1/agent/{agent_id}
+    - openapi/_original/bluejay-openapi.json#DELETE /v1/knowledge-base/{knowledge_base_id}/agents/{agent_id}
+    - openapi/_original/bluejay-openapi.json#GET /v1/agents/{agent_id}
+    - openapi/_original/bluejay-openapi.json#GET /v1/integrations/amelia/agents
+    - openapi/_original/bluejay-openapi.json#GET /v1/integrations/elevenlabs/agents
+  agent_thread:
+    path_segment:
+    - conversations
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/bluejay-openapi.json#DELETE /v1/metrics-lab/lab/{lab_id}/conversations
+    - openapi/_original/bluejay-openapi.json#GET /v1/observability/conversations
+    - openapi/_original/bluejay-openapi.json#GET /v1/observability/conversations/{conversation_id}
+    - openapi/_original/bluejay-openapi.json#POST /v1/metrics-lab/lab/{lab_id}/conversations
+  agent_run:
+    path_segment:
+    - runs
+    properties:
+      agent_id: agent_id
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/bluejay-openapi.json#GET /v1/self-improve/runs
+    - openapi/_original/bluejay-openapi.json#GET /v1/self-improve/runs/{run_id}
+    - openapi/_original/bluejay-openapi.json#POST /v1/self-improve/runs
+  agent_tool:
+    path_segment:
+    - tools
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/bluejay-openapi.json#GET /v1/integrations/vapi/tools

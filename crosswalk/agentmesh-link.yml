@@ -1,0 +1,18 @@
+provider: agentmesh-link
+apis_io: https://apis.io/providers/agentmesh-link/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agents
+    properties:
+      name: name
+      tools: capabilities
+      model: model
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/agentmesh-link-openapi.json#GET /v1/agents
+    - openapi/_original/agentmesh-link-openapi.json#POST /v1/users/agents
+    - openapi/_original/agentmesh-link-openapi.yml#GET /v1/agents
+    - openapi/_original/agentmesh-link-openapi.yml#POST /v1/users/agents

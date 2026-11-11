@@ -1,0 +1,44 @@
+provider: agoragentic-com
+apis_io: https://apis.io/providers/agoragentic-com/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agents
+    - agent
+    properties:
+      name: name
+      id: id
+      created_at: created_at
+      description: description
+      metadata: tags
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/agoragentic-com-openapi.json#GET /agent-os/deployments/{deployment_id}/surface/agent.json
+    - openapi/_original/agoragentic-com-openapi.json#GET /agents
+    - openapi/_original/agoragentic-com-openapi.json#GET /agents/{id}
+    - openapi/_original/agoragentic-com-openapi.json#PATCH /agents/{id}
+  agent_thread:
+    path_segment:
+    - threads
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/agoragentic-com-openapi.json#GET /a2a/correspondence/threads
+    - openapi/_original/agoragentic-com-openapi.json#GET /messages/threads
+    - openapi/_original/agoragentic-com-openapi.json#GET /messages/threads/{threadId}
+  agent_run:
+    path_segment:
+    - runs
+    - tasks
+    properties:
+      status: status
+      id: id
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/agoragentic-com-openapi.json#GET /agent-os/diagnostics/runs/{run_id}
+    - openapi/_original/agoragentic-com-openapi.json#GET /agent-os/finance/deployments/{deployment_id}/research-agent/runs/{run_id}
+    - openapi/_original/agoragentic-com-openapi.json#GET /agent-os/first-party-utilities/canaries/runs
+    - openapi/_original/agoragentic-com-openapi.json#GET /agent-os/first-party-utilities/canaries/runs/{run_id}
+    - openapi/_original/agoragentic-com-openapi.json#GET /agent-os/market-intel/runs

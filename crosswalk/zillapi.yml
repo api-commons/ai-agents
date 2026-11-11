@@ -1,0 +1,12 @@
+provider: zillapi
+apis_io: https://apis.io/providers/zillapi/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agent
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/zillapi-openapi-original.json#GET /v1/properties/{zpid}/agent

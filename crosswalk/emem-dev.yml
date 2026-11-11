@@ -1,0 +1,21 @@
+provider: emem-dev
+apis_io: https://apis.io/providers/emem-dev/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agents
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/emem-dev-openapi-original.json#GET /v1/agents
+    - openapi/_original/emem-dev-openapi.json#GET /v1/agents
+  agent_tool:
+    path_segment:
+    - tools
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/emem-dev-openapi-original.json#GET /v1/tools
+    - openapi/_original/emem-dev-openapi.json#GET /v1/tools

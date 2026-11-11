@@ -1,0 +1,38 @@
+provider: agentphone
+apis_io: https://apis.io/providers/agentphone/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agents
+    properties:
+      name: name
+      id: id
+      created_at: createdAt
+      description: description
+      instructions: systemPrompt
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/agentphone-openapi-original.json#DELETE /v1/agents/{agent_id}
+    - openapi/_original/agentphone-openapi-original.json#GET /v1/agents
+    - openapi/_original/agentphone-openapi-original.json#GET /v1/agents/{agent_id}
+    - openapi/_original/agentphone-openapi-original.json#PATCH /v1/agents/{agent_id}
+    - openapi/_original/agentphone-openapi-original.json#POST /v1/agents
+  agent_thread:
+    path_segment:
+    - conversations
+    properties:
+      id: id
+      created_at: createdAt
+      metadata: metadata
+      messages:
+      - messageCount
+      - messages
+      agent_id: agentId
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/agentphone-openapi-original.json#GET /v1/agents/{agent_id}/conversations
+    - openapi/_original/agentphone-openapi-original.json#GET /v1/conversations
+    - openapi/_original/agentphone-openapi-original.json#GET /v1/conversations/{conversation_id}
+    - openapi/_original/agentphone-openapi-original.json#PATCH /v1/conversations/{conversation_id}

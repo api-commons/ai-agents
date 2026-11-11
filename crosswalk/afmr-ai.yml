@@ -1,0 +1,12 @@
+provider: afmr-ai
+apis_io: https://apis.io/providers/afmr-ai/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agents
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/afmr-ai-openapi.json#GET /agents.json

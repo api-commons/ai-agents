@@ -1,0 +1,59 @@
+provider: relevance-ai
+apis_io: https://apis.io/providers/relevance-ai/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agents
+    properties:
+      name: name
+      id:
+      - _id
+      - agent_id
+      description: description
+      instructions: system_prompt
+      metadata:
+      - metadata
+      - tags
+      tools: actions
+      model: model
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/relevance-ai-openapi.json#GET /chats/agents
+  agent_thread:
+    path_segment:
+    - conversations
+    - chats
+    properties:
+      name: title
+      metadata: metadata
+      status: state
+      updated_at: updated_at
+      conversation_id: conversation_id
+      user_id: user_id
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/relevance-ai-openapi.json#DELETE /agents/{agent_id}/conversations
+    - openapi/_original/relevance-ai-openapi.json#DELETE /agents/{agent_id}/conversations/{conversation_id}
+    - openapi/_original/relevance-ai-openapi.json#GET /agents/tasks/match-groups/{hash}/conversations
+    - openapi/_original/relevance-ai-openapi.json#GET /chats
+    - openapi/_original/relevance-ai-openapi.json#GET /slide/{slideshow_id}/chats
+  agent_run:
+    path_segment:
+    - tasks
+    - runs
+    properties:
+      status: status
+      metadata: metadata
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/relevance-ai-openapi.json#GET /agents/tasks/groups/tasks
+    - openapi/_original/relevance-ai-openapi.json#POST /evals/{resource_type}/{resource_id}/runs
+  agent_tool:
+    path_segment:
+    - tool
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/relevance-ai-openapi.json#POST /auth/oauth/{account_id}/link/tool

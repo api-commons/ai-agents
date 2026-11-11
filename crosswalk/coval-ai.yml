@@ -1,0 +1,44 @@
+provider: coval-ai
+apis_io: https://apis.io/providers/coval-ai/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agents
+    properties:
+      name: display_name
+      instructions: prompt
+      metadata:
+      - metadata
+      - tags
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/coval-ai-openapi.yml#DELETE /agents/{agent_id}
+    - openapi/_original/coval-ai-openapi.yml#GET /agents
+    - openapi/_original/coval-ai-openapi.yml#GET /agents/{agent_id}
+    - openapi/_original/coval-ai-openapi.yml#PATCH /agents/{agent_id}
+    - openapi/_original/coval-ai-openapi.yml#POST /agents
+  agent_thread:
+    path_segment:
+    - conversations
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/coval-ai-openapi.yml#DELETE /conversations/{conversation_id}
+    - openapi/_original/coval-ai-openapi.yml#GET /conversations
+    - openapi/_original/coval-ai-openapi.yml#GET /conversations/{conversation_id}
+    - openapi/_original/coval-ai-openapi.yml#PATCH /conversations/{conversation_id}
+  agent_run:
+    path_segment:
+    - runs
+    properties:
+      agent_id: agent_id
+      metadata: metadata
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/coval-ai-openapi.yml#DELETE /runs/{run_id}
+    - openapi/_original/coval-ai-openapi.yml#GET /runs
+    - openapi/_original/coval-ai-openapi.yml#GET /runs/{run_id}
+    - openapi/_original/coval-ai-openapi.yml#PATCH /runs/{run_id}
+    - openapi/_original/coval-ai-openapi.yml#POST /runs

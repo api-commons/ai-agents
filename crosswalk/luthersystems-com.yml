@@ -1,0 +1,18 @@
+provider: luthersystems-com
+apis_io: https://apis.io/providers/luthersystems-com/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agent
+    properties:
+      name: name
+      description: description
+      tools: capabilities
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/luthersystems-com-agentsearch-openapi.json#GET /.well-known/agent.json
+    - openapi/_original/luthersystems-com-agentsearch-openapi.json#GET /api/agent/{name}
+    - openapi/_original/luthersystems-com-agentsearch-openapi.yml#GET /.well-known/agent.json
+    - openapi/_original/luthersystems-com-agentsearch-openapi.yml#GET /api/agent/{name}

@@ -1,0 +1,26 @@
+provider: sweep
+apis_io: https://apis.io/providers/sweep/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agents
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/sweep-api-openapi.yml#GET /backoffice/agent-summaries/agents
+    - openapi/_original/sweep-openapi.json#GET /backoffice/agent-summaries/agents
+  agent_thread:
+    path_segment:
+    - chats
+    properties:
+      id: recordId
+      user_id: userId
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/sweep-api-openapi.yml#DELETE /ai-agents/chats/{chatId}
+    - openapi/_original/sweep-api-openapi.yml#GET /ai-agents/chats
+    - openapi/_original/sweep-api-openapi.yml#GET /ai-agents/chats/{chatId}
+    - openapi/_original/sweep-api-openapi.yml#GET /ai-agents/{agentId}/chats
+    - openapi/_original/sweep-api-openapi.yml#GET /projects/{projectId}/prompts/{promptId}/chats

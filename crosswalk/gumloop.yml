@@ -1,0 +1,53 @@
+provider: gumloop
+apis_io: https://apis.io/providers/gumloop/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agents
+    properties:
+      name: name
+      id:
+      - id
+      - agent_id
+      created_at: created_at
+      description: description
+      instructions: system_prompt
+      metadata: metadata
+      tools: tools
+      model: model_name
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/gumloop-openapi-original.yml#GET /agents
+    - openapi/_original/gumloop-openapi-original.yml#GET /agents/{agent_id}
+    - openapi/_original/gumloop-openapi-original.yml#PATCH /agents/{agent_id}
+    - openapi/_original/gumloop-openapi-original.yml#POST /agents
+  agent_thread:
+    path_segment:
+    - sessions
+    properties:
+      id: id
+      created_at: created_at
+      name: name
+      metadata: metadata
+      status: state
+      messages: messages
+      agent_id: agent_id
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/gumloop-openapi-original.yml#GET /agents/{agent_id}/sessions
+    - openapi/_original/gumloop-openapi-original.yml#POST /agents/{agent_id}/sessions
+  agent_tool:
+    path_segment:
+    - skills
+    - tools
+    properties:
+      name: name
+      id: agent_id
+      description: description
+      parameters: input_schema
+    core_coverage: 0.8
+    evidence:
+    - openapi/_original/gumloop-openapi-original.yml#GET /mcp/servers/{server_id}/tools
+    - openapi/_original/gumloop-openapi-original.yml#PATCH /agents/{agent_id}/skills

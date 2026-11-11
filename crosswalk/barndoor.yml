@@ -1,0 +1,18 @@
+provider: barndoor
+apis_io: https://apis.io/providers/barndoor/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agents
+    properties:
+      id: id
+      created_at: created_at
+      updated_at: updated_at
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/barndoor-openapi.yml#DELETE /api/agents/{agent_id}
+    - openapi/_original/barndoor-openapi.yml#GET /api/agents
+    - openapi/_original/barndoor-openapi.yml#GET /api/agents/{agent_id}
+    - openapi/_original/barndoor-openapi.yml#POST /api/agents

@@ -1,0 +1,21 @@
+provider: perplexity
+apis_io: https://apis.io/providers/perplexity/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agent
+    properties:
+      id: id
+      created_at: created_at
+      instructions: instructions
+      tools:
+      - tools
+      - skills
+      model: model
+      status: status
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/perplexity-openapi.json#GET /v1/agent/{id}
+    - openapi/_original/perplexity-openapi.json#POST /v1/agent

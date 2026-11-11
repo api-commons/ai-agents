@@ -1,0 +1,60 @@
+provider: elevenlabs
+apis_io: https://apis.io/providers/elevenlabs/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agents
+    properties:
+      name: name
+      id: agent_id
+      created_at: created_at
+      metadata:
+      - metadata
+      - tags
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/elevenlabs-conversational-ai-openapi.yml#DELETE /v1/convai/agents/{agent_id}
+    - openapi/_original/elevenlabs-conversational-ai-openapi.yml#GET /v1/convai/agents
+    - openapi/_original/elevenlabs-conversational-ai-openapi.yml#GET /v1/convai/agents/{agent_id}
+    - openapi/_original/elevenlabs-conversational-ai-openapi.yml#PATCH /v1/convai/agents/{agent_id}
+    - openapi/_original/elevenlabs-conversational-ai-openapi.yml#POST /v1/convai/agents
+  agent_thread:
+    path_segment:
+    - conversations
+    properties:
+      metadata: metadata
+      status: status
+      messages: message_count
+      conversation_id: conversation_id
+      user_id: user_id
+      agent_id: agent_id
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/elevenlabs-conversational-ai-openapi.yml#DELETE /v1/convai/conversations/{conversation_id}
+    - openapi/_original/elevenlabs-conversational-ai-openapi.yml#GET /v1/convai/conversations
+    - openapi/_original/elevenlabs-conversational-ai-openapi.yml#GET /v1/convai/conversations/{conversation_id}
+    - openapi/_original/elevenlabs-openapi.json#DELETE /v1/convai/conversations/{conversation_id}
+    - openapi/_original/elevenlabs-openapi.json#GET /v1/convai/conversations
+  agent_tool:
+    path_segment:
+    - tools
+    properties:
+      name:
+      - name
+      - title
+      id: id
+      description: description
+      created_at: created_at
+      parameters:
+      - parameters
+      - inputSchema
+      type: type
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/elevenlabs-conversational-ai-openapi.yml#DELETE /v1/convai/tools/{tool_id}
+    - openapi/_original/elevenlabs-conversational-ai-openapi.yml#GET /v1/convai/tools
+    - openapi/_original/elevenlabs-conversational-ai-openapi.yml#POST /v1/convai/tools
+    - openapi/_original/elevenlabs-openapi.json#DELETE /v1/convai/tools/{tool_id}
+    - openapi/_original/elevenlabs-openapi.json#GET /v1/convai/mcp-servers/{mcp_server_id}/tools

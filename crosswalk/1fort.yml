@@ -1,0 +1,19 @@
+provider: 1fort
+apis_io: https://apis.io/providers/1fort/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agents
+    properties:
+      name: name
+      id: id
+      created_at: created_at
+      description: description
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/1fort-openapi-original.yml#GET /broker/{broker_pk}/clients/{client_pk}/agents
+    - openapi/_original/1fort-openapi-original.yml#POST /broker/{broker_pk}/clients/{id}/agents
+    - openapi/_original/1fort-openapi.json#GET /broker/{broker_pk}/clients/{client_pk}/agents
+    - openapi/_original/1fort-openapi.json#POST /broker/{broker_pk}/clients/{id}/agents

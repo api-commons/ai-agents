@@ -1,0 +1,33 @@
+provider: thehiveryiq-com
+apis_io: https://apis.io/providers/thehiveryiq-com/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agents
+    - agent
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/thehiveryiq-com-hivemorph-openapi.json#GET /.well-known/agent.json
+    - openapi/_original/thehiveryiq-com-hivemorph-openapi.json#GET /v1/a2a/agents
+    - openapi/_original/thehiveryiq-com-hivemorph-openapi.json#GET /v1/a2a/agents/{agent_id}
+    - openapi/_original/thehiveryiq-com-hivemorph-openapi.json#GET /v1/compute-grid/agents
+    - openapi/_original/thehiveryiq-com-hivemorph-openapi.json#GET /v1/designer/agents
+  agent_run:
+    path_segment:
+    - runs
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/thehiveryiq-com-hivemorph-openapi.json#GET /v1/compound/runs
+    - openapi/_original/thehiveryiq-com-hivemorph-openapi.yml#GET /v1/compound/runs
+  agent_tool:
+    path_segment:
+    - tools
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/thehiveryiq-com-hivemorph-openapi.json#GET /v1/agent/tools
+    - openapi/_original/thehiveryiq-com-hivemorph-openapi.yml#GET /v1/agent/tools

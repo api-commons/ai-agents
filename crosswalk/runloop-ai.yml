@@ -1,0 +1,35 @@
+provider: runloop-ai
+apis_io: https://apis.io/providers/runloop-ai/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agents
+    properties:
+      name: name
+      id: id
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/runloop-agents-api-openapi.yml#GET /v1/agents
+    - openapi/_original/runloop-agents-api-openapi.yml#GET /v1/agents/{id}
+    - openapi/_original/runloop-agents-api-openapi.yml#POST /v1/agents
+    - openapi/_original/runloop-api-openapi.yml#GET /v1/agents
+    - openapi/_original/runloop-api-openapi.yml#GET /v1/agents/{id}
+  agent_run:
+    path_segment:
+    - runs
+    properties:
+      status:
+      - state
+      - status
+      id: id
+      metadata: metadata
+      name: name
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/runloop-api-openapi.yml#GET /v1/benchmarks/runs
+    - openapi/_original/runloop-api-openapi.yml#GET /v1/benchmarks/runs/{id}
+    - openapi/_original/runloop-api-openapi.yml#GET /v1/benchmarks/{id}/runs
+    - openapi/_original/runloop-api-openapi.yml#GET /v1/scenarios/runs
+    - openapi/_original/runloop-api-openapi.yml#GET /v1/scenarios/runs/{id}

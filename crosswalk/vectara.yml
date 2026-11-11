@@ -1,0 +1,37 @@
+provider: vectara
+apis_io: https://apis.io/providers/vectara/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agents
+    properties:
+      name: name
+      id: id
+      description: description
+      instructions: instructions
+      tools: tool_ids
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/vectara-openapi.yml#DELETE /v2/agents/{agent_id}
+    - openapi/_original/vectara-openapi.yml#GET /v2/agents
+    - openapi/_original/vectara-openapi.yml#GET /v2/agents/{agent_id}
+    - openapi/_original/vectara-openapi.yml#PATCH /v2/agents/{agent_id}
+    - openapi/_original/vectara-openapi.yml#POST /v2/agents
+  agent_thread:
+    path_segment:
+    - sessions
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/vectara-openapi.yml#GET /v2/agents/{agent_id}/sessions
+    - openapi/_original/vectara-openapi.yml#POST /v2/agents/{agent_id}/sessions
+  agent_tool:
+    path_segment:
+    - tools
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/vectara-openapi.yml#GET /v2/tools
+    - openapi/_original/vectara-openapi.yml#POST /v2/tools

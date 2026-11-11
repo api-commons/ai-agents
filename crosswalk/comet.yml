@@ -1,0 +1,26 @@
+provider: comet
+apis_io: https://apis.io/providers/comet/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agents
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/comet-opik-openapi-original.yml#PUT /v1/private/local-runners/{runnerId}/agents
+  agent_thread:
+    path_segment:
+    - threads
+    properties:
+      id: id
+      created_at: created_at
+      metadata: tags
+      status: status
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/comet-opik-openapi-original.yml#GET /v1/private/traces/threads
+    - openapi/_original/comet-opik-openapi-original.yml#PATCH /v1/private/traces/threads/batch
+    - openapi/_original/comet-opik-openapi-original.yml#PATCH /v1/private/traces/threads/{threadModelId}
+    - openapi/_original/comet-opik-openapi-original.yml#POST /v1/private/manual-evaluation/threads

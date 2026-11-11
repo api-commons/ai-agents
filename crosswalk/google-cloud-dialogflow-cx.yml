@@ -1,0 +1,20 @@
+provider: google-cloud-dialogflow-cx
+apis_io: https://apis.io/providers/google-cloud-dialogflow-cx/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agents
+    properties:
+      name:
+      - name
+      - displayName
+      description: description
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/openapi.yml#DELETE /projects/{projectId}/locations/{location}/agents/{agentId}
+    - openapi/_original/openapi.yml#GET /projects/{projectId}/locations/{location}/agents
+    - openapi/_original/openapi.yml#GET /projects/{projectId}/locations/{location}/agents/{agentId}
+    - openapi/_original/openapi.yml#PATCH /projects/{projectId}/locations/{location}/agents/{agentId}
+    - openapi/_original/openapi.yml#POST /projects/{projectId}/locations/{location}/agents

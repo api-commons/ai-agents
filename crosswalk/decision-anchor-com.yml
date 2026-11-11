@@ -1,0 +1,24 @@
+provider: decision-anchor-com
+apis_io: https://apis.io/providers/decision-anchor-com/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agents
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/decision-anchor-com-openapi.json#GET /dap/agents
+    - openapi/_original/decision-anchor-com-openapi.yml#GET /dap/agents
+  agent_tool:
+    path_segment:
+    - tools
+    - tool
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/decision-anchor-com-openapi.json#GET /v1/tsl/tool/{tool_id}
+    - openapi/_original/decision-anchor-com-openapi.json#GET /v1/tsl/tools
+    - openapi/_original/decision-anchor-com-openapi.yml#GET /v1/tsl/tool/{tool_id}
+    - openapi/_original/decision-anchor-com-openapi.yml#GET /v1/tsl/tools

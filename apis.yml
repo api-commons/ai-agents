@@ -1,0 +1,56 @@
+aid: common-ai-agents
+name: AI Agents
+type: Common
+description: 'The common AI Agents vocabulary, distilled from the harvested OpenAPI of 680 providers in APIs.io:
+  shared operations, JSON Schema per concept with measured adoption, and a crosswalk from the common names to each
+  provider''s own.'
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+- Application Programming Interface
+- API
+- AI Agents
+- Agents
+- Agentic AI
+- Agent Platform
+- Common Schema
+created: '2026-11-11'
+modified: '2026-11-11'
+url: https://raw.githubusercontent.com/api-commons/ai-agents/main/apis.yml
+specificationVersion: '0.20'
+apis:
+- aid: common-ai-agents:ai-agents
+  name: Common AI Agents Interface
+  description: The AI Agents interface the market already shares, measured.
+  humanURL: https://github.com/api-commons/ai-agents
+  tags:
+  - AI Agents
+  - Agents
+  properties:
+  - type: OpenAPI
+    url: https://raw.githubusercontent.com/api-commons/ai-agents/main/openapi.yml
+  - type: Profile
+    url: https://raw.githubusercontent.com/api-commons/ai-agents/main/profile.yml
+  - type: Adopters
+    url: https://raw.githubusercontent.com/api-commons/ai-agents/main/adopters.yml
+  - type: Arazzo
+    url: https://raw.githubusercontent.com/api-commons/ai-agents/main/arazzo.yml
+  - type: Rules
+    url: https://raw.githubusercontent.com/api-commons/schema-commons/main/ruleset/schema-commons-naming.yaml
+  - type: JSONSchema
+    name: ai_agent
+    url: https://raw.githubusercontent.com/api-commons/ai-agents/main/schema/ai_agent.json
+  - type: JSONSchema
+    name: agent_thread
+    url: https://raw.githubusercontent.com/api-commons/ai-agents/main/schema/agent_thread.json
+  - type: JSONSchema
+    name: agent_run
+    url: https://raw.githubusercontent.com/api-commons/ai-agents/main/schema/agent_run.json
+  - type: JSONSchema
+    name: agent_tool
+    url: https://raw.githubusercontent.com/api-commons/ai-agents/main/schema/agent_tool.json
+common:
+- type: License
+  url: https://raw.githubusercontent.com/api-commons/ai-agents/main/LICENSE
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

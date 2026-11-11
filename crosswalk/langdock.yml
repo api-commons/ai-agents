@@ -1,0 +1,23 @@
+provider: langdock
+apis_io: https://apis.io/providers/langdock/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agents
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/langdock-openapi.yml#POST /export/agents
+  agent_run:
+    path_segment:
+    - runs
+    properties:
+      status: run_status
+      run_id: run_id
+      input: input
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/langdock-openapi.yml#GET /workflows/v1/runs
+    - openapi/_original/langdock-openapi.yml#GET /workflows/{workflowId}/runs

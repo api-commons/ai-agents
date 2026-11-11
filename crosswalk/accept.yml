@@ -1,0 +1,16 @@
+provider: accept
+apis_io: https://apis.io/providers/accept/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agents
+    properties:
+      name: name
+      id: id
+      created_at: created_at
+      updated_at: updated_at
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/accept-midas-openapi-original.yml#GET /v1/agents/{id}

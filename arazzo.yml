@@ -1,0 +1,56 @@
+arazzo: 1.0.1
+info:
+  title: AI Agents workflows (API Commons)
+  version: 0.1.0-draft.20261111
+  summary: Reference workflows over the common AI Agents operations.
+  description: 'Reference compositions of the operations this context''s providers share. Not measured: every step
+    is a core- or extended-tier operation of the common OpenAPI, so the workflow runs against any provider that
+    implements those operations (see crosswalk/).'
+sourceDescriptions:
+- name: ai-agents
+  url: ./openapi.yml
+  type: openapi
+workflows:
+- workflowId: run-an-agent
+  summary: Create an agent with a tool, open a thread and run the agent on it
+  description: Create an agent with a tool, open a thread and run the agent on it.
+  steps:
+  - stepId: tool
+    operationId: createAgentTool
+    description: Create an agent tool -- a core-tier operation (60% of providers).
+    successCriteria:
+    - condition: $statusCode == 200
+    outputs:
+      id: $response.body#/id
+  - stepId: agent
+    operationId: createAiAgent
+    description: Create an ai agent -- a core-tier operation (57% of providers).
+    successCriteria:
+    - condition: $statusCode == 200
+    outputs:
+      id: $response.body#/id
+  - stepId: thread
+    operationId: createAgentThread
+    description: Create an agent thread -- a core-tier operation (60% of providers).
+    successCriteria:
+    - condition: $statusCode == 200
+    outputs:
+      id: $response.body#/id
+    requestBody:
+      contentType: application/json
+      payload:
+        agent_id: $steps.agent.outputs.id
+  - stepId: run
+    operationId: createAgentRun
+    description: Create an agent run -- a core-tier operation (66% of providers).
+    successCriteria:
+    - condition: $statusCode == 200
+    outputs:
+      id: $response.body#/id
+    requestBody:
+      contentType: application/json
+      payload:
+        agent_id: $steps.agent.outputs.id
+        thread_id: $steps.thread.outputs.id
+  x-commons-tiers:
+  - core

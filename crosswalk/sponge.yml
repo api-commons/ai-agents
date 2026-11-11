@@ -1,0 +1,20 @@
+provider: sponge
+apis_io: https://apis.io/providers/sponge/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agents
+    properties:
+      name: name
+      description: description
+      metadata: metadata
+      status: status
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/sponge-openapi-original.json#DELETE /api/agents/{id}
+    - openapi/_original/sponge-openapi-original.json#GET /api/agents/
+    - openapi/_original/sponge-openapi-original.json#GET /api/agents/{id}
+    - openapi/_original/sponge-openapi-original.json#POST /api/agents/
+    - openapi/_original/sponge-openapi-original.json#PUT /api/agents/{id}

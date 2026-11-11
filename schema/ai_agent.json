@@ -1,0 +1,152 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/ai-agents/main/schema/ai_agent.json",
+  "title": "Ai Agent",
+  "description": "The common ai_agent in AI Agents, distilled from 121 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.802,
+      "x-commons-providers": 97,
+      "x-commons-spellings": [
+        "name",
+        "display_name",
+        "displayName",
+        "label",
+        "title"
+      ]
+    },
+    "id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.793,
+      "x-commons-providers": 96,
+      "x-commons-spellings": [
+        "id",
+        "agent_id",
+        "agentId",
+        "_id"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.512,
+      "x-commons-providers": 62,
+      "x-commons-spellings": [
+        "created_at",
+        "createdAt",
+        "create_time",
+        "created",
+        "createdDate",
+        "dateCreated"
+      ],
+      "format": "date-time"
+    },
+    "description": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.446,
+      "x-commons-providers": 54,
+      "x-commons-spellings": [
+        "description",
+        "details"
+      ]
+    },
+    "updated_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.372,
+      "x-commons-providers": 45,
+      "x-commons-spellings": [
+        "updated_at",
+        "updatedAt",
+        "update_time",
+        "updatedDate",
+        "dateModified",
+        "modified_at",
+        "updated"
+      ],
+      "format": "date-time"
+    },
+    "instructions": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.289,
+      "x-commons-providers": 35,
+      "x-commons-spellings": [
+        "instructions",
+        "prompt",
+        "system_prompt",
+        "systemPrompt",
+        "role",
+        "system_message",
+        "systemMessage"
+      ]
+    },
+    "metadata": {
+      "type": "object",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.281,
+      "x-commons-providers": 34,
+      "x-commons-spellings": [
+        "metadata",
+        "tags",
+        "attributes",
+        "labels",
+        "meta_data"
+      ]
+    },
+    "tools": {
+      "type": "array",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.24,
+      "x-commons-providers": 29,
+      "x-commons-spellings": [
+        "tools",
+        "skills",
+        "capabilities",
+        "tool_ids",
+        "actions",
+        "integrations"
+      ]
+    },
+    "model": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.207,
+      "x-commons-providers": 25,
+      "x-commons-spellings": [
+        "model",
+        "model_id",
+        "model_name",
+        "engine",
+        "llmModel",
+        "llm"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.207,
+      "x-commons-providers": 25,
+      "x-commons-spellings": [
+        "status",
+        "state"
+      ]
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "ai-agents",
+    "concept": "ai_agent",
+    "providers": 121,
+    "generated": "2026-11-11",
+    "version": "0.1.0-draft.20261111",
+    "status": "draft"
+  }
+}

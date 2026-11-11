@@ -1,0 +1,44 @@
+provider: warp
+apis_io: https://apis.io/providers/warp/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agent
+    properties:
+      id: id
+      description: description
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/warp-oz-agent-api-openapi.yml#GET /agent
+  agent_thread:
+    path_segment:
+    - conversation
+    - conversations
+    properties:
+      id: id
+      messages: messages
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/warp-oz-agent-api-openapi.yml#GET /agent/conversations/{conversation_id}
+    - openapi/_original/warp-oz-agent-api-openapi.yml#GET /agent/runs/{runId}/conversation
+  agent_run:
+    path_segment:
+    - runs
+    properties:
+      status: state
+      created_at: created_at
+      started_at: started_at
+      run_id: run_id
+      name: title
+      input: prompt
+      updated_at: updated_at
+      thread_id:
+      - session_id
+      - conversation_id
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/warp-oz-agent-api-openapi.yml#GET /agent/runs
+    - openapi/_original/warp-oz-agent-api-openapi.yml#GET /agent/runs/{runId}
+    - openapi/_original/warp-oz-agent-api-openapi.yml#POST /agent/runs

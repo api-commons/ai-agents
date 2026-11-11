@@ -1,0 +1,59 @@
+provider: qliksense
+apis_io: https://apis.io/providers/qliksense/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - assistants
+    properties:
+      name:
+      - name
+      - title
+      id: id
+      created_at: createdAt
+      description: description
+      updated_at: updatedAt
+      instructions: systemMessage
+      metadata: tags
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/qliksense-assistants.json#DELETE /api/v1/assistants/{id}
+    - openapi/_original/qliksense-assistants.json#GET /api/v1/assistants
+    - openapi/_original/qliksense-assistants.json#GET /api/v1/assistants/{id}
+    - openapi/_original/qliksense-assistants.json#PATCH /api/v1/assistants/{id}
+    - openapi/_original/qliksense-assistants.json#POST /api/v1/assistants
+  agent_thread:
+    path_segment:
+    - threads
+    properties:
+      id: id
+      created_at: createdAt
+      name: name
+      updated_at: updatedAt
+      messages: messages
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/qliksense-assistants.json#DELETE /api/v1/assistants/{assistantid}/threads/{threadid}
+    - openapi/_original/qliksense-assistants.json#GET /api/v1/assistants/{assistantId}/threads
+    - openapi/_original/qliksense-assistants.json#GET /api/v1/assistants/{assistantid}/threads/{threadid}
+    - openapi/_original/qliksense-assistants.json#PATCH /api/v1/assistants/{assistantid}/threads/{threadid}
+    - openapi/_original/qliksense-assistants.json#POST /api/v1/assistants/{assistantId}/threads
+  agent_run:
+    path_segment:
+    - runs
+    properties:
+      status: status
+      id: id
+      created_at: createdAt
+      started_at: startTime
+      name: title
+      error: error
+      updated_at: updatedAt
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/qliksense-automations.json#GET /api/v1/automations/{id}/runs
+    - openapi/_original/qliksense-automations.json#GET /api/v1/automations/{id}/runs/{runId}
+    - openapi/_original/qliksense-automations.json#POST /api/v1/automations/{id}/runs
+    - openapi/_original/qliksense-workflows-automations.json#GET /api/workflows/automations/{id}/runs
+    - openapi/_original/qliksense-workflows-automations.json#GET /api/workflows/automations/{id}/runs/{runId}

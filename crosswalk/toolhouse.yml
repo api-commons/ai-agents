@@ -1,0 +1,57 @@
+provider: toolhouse
+apis_io: https://apis.io/providers/toolhouse/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agents
+    properties:
+      name: title
+      id:
+      - id
+      - agent_id
+      created_at: created_at
+      updated_at: updated_at
+      instructions:
+      - prompt
+      - system_prompt
+      tools: tools
+      model: model
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/toolhouse-openapi-original.yml#DELETE /v1/agents/{chat_id}
+    - openapi/_original/toolhouse-openapi-original.yml#GET /me/agents
+    - openapi/_original/toolhouse-openapi-original.yml#GET /me/agents/{agent_id}
+    - openapi/_original/toolhouse-openapi-original.yml#GET /me/metrics/agent-runs/agents
+    - openapi/_original/toolhouse-openapi-original.yml#GET /v1/agents
+  agent_thread:
+    path_segment:
+    - chats
+    properties:
+      id: id
+      created_at: created_at
+      name: title
+      updated_at: updated_at
+      messages: history
+      user_id: user_id
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/toolhouse-openapi-original.yml#DELETE /me/chats/{chat_id}
+    - openapi/_original/toolhouse-openapi-original.yml#GET /me/chats
+    - openapi/_original/toolhouse-openapi-original.yml#GET /me/chats/{chat_id}
+    - openapi/_original/toolhouse-openapi-original.yml#PATCH /me/chats/{chat_id}
+    - openapi/_original/toolhouse-openapi-original.yml#POST /me/chats
+  agent_run:
+    path_segment:
+    - runs
+    properties:
+      id: id
+      created_at: created_at
+      completed_at: end_time
+      started_at: start_time
+      agent_id: agent_id
+      run_id: run_id
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/toolhouse-openapi-original.yml#POST /me/chats/{chat_id}/runs

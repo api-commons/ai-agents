@@ -1,0 +1,52 @@
+provider: frontline
+apis_io: https://apis.io/providers/frontline/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agents
+    properties:
+      name: name
+      id: id
+      created_at: createdAt
+      description: description
+      updated_at: updatedAt
+      status: status
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/frontline-openapi-original.yml#DELETE /public/v1/agents/{agentId}
+    - openapi/_original/frontline-openapi-original.yml#GET /public/v1/agents
+    - openapi/_original/frontline-openapi-original.yml#GET /public/v1/agents/{agentId}
+    - openapi/_original/frontline-openapi-original.yml#POST /public/v1/agents
+    - openapi/_original/frontline-openapi-original.yml#PUT /public/v1/agents/{agentId}
+  agent_thread:
+    path_segment:
+    - conversations
+    properties:
+      id: id
+      created_at: created_at
+      name: name
+      updated_at: updated_at
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/frontline-openapi-original.yml#GET /public/v1/agents/{agentId}/conversations
+    - openapi/_original/frontline-openapi-original.yml#GET /public/v1/agents/{agentId}/conversations/{conversationId}
+  agent_tool:
+    path_segment:
+    - tools
+    properties:
+      name: name
+      id: id
+      description: description
+      created_at: createdAt
+      parameters: arguments
+      updated_at: updatedAt
+      type: type
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/frontline-openapi-original.yml#DELETE /public/v1/tools/{toolId}
+    - openapi/_original/frontline-openapi-original.yml#GET /public/v1/tools
+    - openapi/_original/frontline-openapi-original.yml#GET /public/v1/tools/{toolId}
+    - openapi/_original/frontline-openapi-original.yml#POST /public/v1/tools
+    - openapi/_original/frontline-openapi-original.yml#PUT /public/v1/tools/{toolId}

@@ -1,0 +1,41 @@
+provider: h2o-ai
+apis_io: https://apis.io/providers/h2o-ai/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agents
+    properties:
+      name: label
+      id: id
+      description: description
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/h2o-ai-h2ogpte-openapi-original.yml#GET /agents
+  agent_thread:
+    path_segment:
+    - chats
+    properties:
+      id: id
+      name: name
+      updated_at: updated_at
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/h2o-ai-h2ogpte-openapi-original.yml#DELETE /chats/{session_id}
+    - openapi/_original/h2o-ai-h2ogpte-openapi-original.yml#GET /chats
+    - openapi/_original/h2o-ai-h2ogpte-openapi-original.yml#GET /chats/{session_id}
+    - openapi/_original/h2o-ai-h2ogpte-openapi-original.yml#GET /collections/{collection_id}/chats
+    - openapi/_original/h2o-ai-h2ogpte-openapi-original.yml#GET /documents/{document_id}/chats
+  agent_tool:
+    path_segment:
+    - tool
+    - tools
+    properties:
+      name: name
+      description: description
+    core_coverage: 0.4
+    evidence:
+    - openapi/_original/h2o-ai-h2ogpte-openapi-original.yml#DELETE /ai_assistants/{assistant_id}/tool
+    - openapi/_original/h2o-ai-h2ogpte-openapi-original.yml#GET /agents/tools
+    - openapi/_original/h2o-ai-h2ogpte-openapi-original.yml#PUT /ai_assistants/{assistant_id}/tool

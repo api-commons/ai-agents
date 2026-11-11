@@ -1,0 +1,21 @@
+provider: koreai
+apis_io: https://apis.io/providers/koreai/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agent
+    properties:
+      id: agentId
+      metadata: metadata
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/koreai-abl-runtime-conversation-openapi.json#POST /api/v1/chat/agent
+  agent_run:
+    path_segment:
+    - executions
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/koreai-abl-runtime-workflows-openapi.json#GET /api/v1/workflows/{workflowId}/executions/{executionId}

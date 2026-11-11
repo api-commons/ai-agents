@@ -1,0 +1,27 @@
+provider: openhands
+apis_io: https://apis.io/providers/openhands/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agents
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/openhands-openapi.json#GET /api/options/agents
+  agent_thread:
+    path_segment:
+    - conversations
+    properties:
+      created_at: created_at
+      name: title
+      status: status
+      conversation_id: conversation_id
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/openhands-openapi.json#DELETE /api/conversations/{conversation_id}
+    - openapi/_original/openhands-openapi.json#GET /api/conversations
+    - openapi/_original/openhands-openapi.json#GET /api/conversations/{conversation_id}
+    - openapi/_original/openhands-openapi.json#PATCH /api/conversations/{conversation_id}
+    - openapi/_original/openhands-openapi.json#POST /api/conversations

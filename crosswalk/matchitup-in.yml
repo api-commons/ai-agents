@@ -1,0 +1,25 @@
+provider: matchitup-in
+apis_io: https://apis.io/providers/matchitup-in/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agents
+    - bot
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/matchitup-in-openapi.json#DELETE /api/protocol/agents/{agent_id}
+    - openapi/_original/matchitup-in-openapi.json#GET /api/federation/agents
+    - openapi/_original/matchitup-in-openapi.json#GET /api/preview/bot/{agent_id}
+    - openapi/_original/matchitup-in-openapi.json#GET /api/protocol/agents
+    - openapi/_original/matchitup-in-openapi.json#GET /api/protocol/agents/{agent_id}
+  agent_thread:
+    path_segment:
+    - thread
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/matchitup-in-openapi.json#GET /api/agent/my-inbox/{agent_id}/thread
+    - openapi/_original/matchitup-in-openapi.yml#GET /api/agent/my-inbox/{agent_id}/thread

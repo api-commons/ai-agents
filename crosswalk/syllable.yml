@@ -1,0 +1,47 @@
+provider: syllable
+apis_io: https://apis.io/providers/syllable/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agents
+    properties:
+      name:
+      - name
+      - label
+      id: id
+      description: description
+      updated_at: updated_at
+      instructions: prompt
+      metadata: labels
+      tools: tools
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/syllable-sdk-openapi-original.yml#DELETE /api/v1/agents/{agent_id}
+    - openapi/_original/syllable-sdk-openapi-original.yml#GET /api/v1/agents/
+    - openapi/_original/syllable-sdk-openapi-original.yml#GET /api/v1/agents/{agent_id}
+    - openapi/_original/syllable-sdk-openapi-original.yml#POST /api/v1/agents/
+    - openapi/_original/syllable-sdk-openapi-original.yml#PUT /api/v1/agents/
+  agent_thread:
+    path_segment:
+    - conversations
+    properties:
+      conversation_id: conversation_id
+      agent_id: agent_id
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/syllable-sdk-openapi-original.yml#GET /api/v1/conversations/
+  agent_tool:
+    path_segment:
+    - tools
+    properties:
+      name: name
+      id: id
+    core_coverage: 0.4
+    evidence:
+    - openapi/_original/syllable-sdk-openapi-original.yml#DELETE /api/v1/tools/{tool_name}
+    - openapi/_original/syllable-sdk-openapi-original.yml#GET /api/v1/tools/
+    - openapi/_original/syllable-sdk-openapi-original.yml#GET /api/v1/tools/{tool_name}
+    - openapi/_original/syllable-sdk-openapi-original.yml#POST /api/v1/tools/
+    - openapi/_original/syllable-sdk-openapi-original.yml#PUT /api/v1/tools/

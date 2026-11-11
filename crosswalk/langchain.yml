@@ -1,0 +1,70 @@
+provider: langchain
+apis_io: https://apis.io/providers/langchain/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agents
+    properties:
+      model: model_name
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/langchain-openapi.json#GET /v1/platform/fleet/usage/agents
+  agent_thread:
+    path_segment:
+    - threads
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/langchain-openapi.json#GET /api/v1/runs/threads/{thread_id}
+  agent_run:
+    path_segment:
+    - runs
+    properties:
+      status: status
+      id: id
+      created_at: created_at
+      completed_at:
+      - end_time
+      - finished_at
+      started_at: start_time
+      metadata:
+      - metadata
+      - tags
+      run_id: run_id
+      name: name
+      error: error
+      input: messages
+      updated_at:
+      - modified_at
+      - updated_at
+      thread_id:
+      - session_id
+      - thread_id
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/langchain-openapi.json#DELETE /api/v1/annotation-queues/{queue_id}/runs/{queue_run_id}
+    - openapi/_original/langchain-openapi.json#GET /api/v1/annotation-queues/{queue_id}/runs
+    - openapi/_original/langchain-openapi.json#GET /api/v1/bulk-exports/runs
+    - openapi/_original/langchain-openapi.json#GET /api/v1/bulk-exports/{bulk_export_id}/runs
+    - openapi/_original/langchain-openapi.json#GET /api/v1/bulk-exports/{bulk_export_id}/runs/{run_id}
+  agent_tool:
+    path_segment:
+    - tools
+    properties:
+      name: name
+      id: id
+      description: description
+      created_at: created_at
+      parameters:
+      - inputSchema
+      - parameters
+      updated_at: updated_at
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/langchain-openapi.json#DELETE /api/v1/mcp/tools
+    - openapi/_original/langchain-openapi.json#DELETE /v1/platform/tools/{handle}
+    - openapi/_original/langchain-openapi.json#GET /api/v1/mcp/tools
+    - openapi/_original/langchain-openapi.json#GET /v1/fleet/mcp/tools
+    - openapi/_original/langchain-openapi.json#GET /v1/platform/fleet/usage/tools

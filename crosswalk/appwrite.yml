@@ -1,0 +1,13 @@
+provider: appwrite
+apis_io: https://apis.io/providers/appwrite/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - assistant
+    properties:
+      instructions: prompt
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/appwrite-open-api3-latest.json#POST /console/assistant

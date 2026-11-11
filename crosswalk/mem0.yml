@@ -1,0 +1,25 @@
+provider: mem0
+apis_io: https://apis.io/providers/mem0/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agents
+    properties:
+      name: name
+      id: agent_id
+      metadata: metadata
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/mem0-openapi.json#POST /v1/agents/
+  agent_run:
+    path_segment:
+    - runs
+    properties:
+      metadata: metadata
+      run_id: run_id
+      name: name
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/mem0-openapi.json#POST /v1/runs/

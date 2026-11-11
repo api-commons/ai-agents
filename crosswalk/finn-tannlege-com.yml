@@ -1,0 +1,16 @@
+provider: finn-tannlege-com
+apis_io: https://apis.io/providers/finn-tannlege-com/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agents
+    properties:
+      id: id
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/finn-tannlege-com-openapi.json#GET /api/tannlege/agents
+    - openapi/_original/finn-tannlege-com-openapi.json#GET /api/tannlege/agents/{id}
+    - openapi/_original/finn-tannlege-com-openapi.yml#GET /api/tannlege/agents
+    - openapi/_original/finn-tannlege-com-openapi.yml#GET /api/tannlege/agents/{id}

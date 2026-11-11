@@ -1,0 +1,16 @@
+provider: brick-blue
+apis_io: https://apis.io/providers/brick-blue/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agents
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/brick-blue-openapi.json#GET /api/v1/agents
+    - openapi/_original/brick-blue-openapi.json#GET /api/v1/agents/{id}
+    - openapi/_original/brick-blue-openapi.json#POST /api/v1/agents
+    - openapi/_original/brick-blue-openapi.yml#GET /api/v1/agents
+    - openapi/_original/brick-blue-openapi.yml#GET /api/v1/agents/{id}

@@ -1,0 +1,61 @@
+provider: tale-dev
+apis_io: https://apis.io/providers/tale-dev/
+context: ai-agents
+generated: '2026-11-11'
+concepts:
+  ai_agent:
+    path_segment:
+    - agents
+    properties:
+      name: name
+      id: id
+      created_at: createdAt
+      updated_at: updatedAt
+      instructions: instructions
+      tools:
+      - skills
+      - tools
+      model: model
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/tale-dev-openapi-original.json#DELETE /api/v1/projects/{id}/agents/{agentId}
+    - openapi/_original/tale-dev-openapi-original.json#GET /api/v1/projects/{id}/agents
+    - openapi/_original/tale-dev-openapi-original.json#GET /api/v1/projects/{id}/agents/{agentId}
+    - openapi/_original/tale-dev-openapi-original.json#POST /api/v1/projects/{id}/agents
+    - openapi/_original/tale-dev-openapi-original.json#PUT /api/v1/projects/{id}/agents/{agentId}
+  agent_thread:
+    path_segment:
+    - threads
+    - conversations
+    properties:
+      id: id
+      created_at: createdAt
+      name: title
+      status: status
+      updated_at: updatedAt
+      conversation_id: conversationId
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/tale-dev-openapi-original.json#DELETE /api/v1/projects/{id}/threads/{threadId}
+    - openapi/_original/tale-dev-openapi-original.json#DELETE /api/v1/threads/{id}
+    - openapi/_original/tale-dev-openapi-original.json#GET /api/v1/conversations
+    - openapi/_original/tale-dev-openapi-original.json#GET /api/v1/projects/{id}/threads
+    - openapi/_original/tale-dev-openapi-original.json#GET /api/v1/projects/{id}/threads/{threadId}
+  agent_run:
+    path_segment:
+    - runs
+    properties:
+      status: status
+      id: id
+      completed_at: finishedAt
+      started_at: startedAt
+      run_id: runId
+      name: name
+      input: input
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/tale-dev-openapi-original.json#DELETE /api/v1/projects/{id}/runs/{runId}
+    - openapi/_original/tale-dev-openapi-original.json#DELETE /api/v1/runs/{runId}
+    - openapi/_original/tale-dev-openapi-original.json#GET /api/v1/automations/{name}/runs
+    - openapi/_original/tale-dev-openapi-original.json#GET /api/v1/projects/{id}/automations/{name}/runs
+    - openapi/_original/tale-dev-openapi-original.json#GET /api/v1/projects/{id}/runs
